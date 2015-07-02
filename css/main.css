@@ -1,0 +1,121 @@
+/************************************************
+ GENERAL
+ ************************************************/
+article, 
+aside, 
+canvas, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section, 
+summary 
+{
+    display: block;
+}
+
+body {
+/*    font-family: 'Allerta', sans-serif;*/
+    font-family: 'Merriweather Sans', sans-serif;
+/*    font-family: 'Ubuntu', sans-serif;*/
+/*    background-image: url('../img/bg.gif');*/
+/********************************************
+    Background pattern for all pages.
+*********************************************/
+    background-color: #eee;
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+    background-size: 64px 64px;
+    background-position:0 0, 32px 32px;
+}
+
+#wrapper {
+  background-color: darkgreen;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0.5% 0.5%;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+#canvas {
+  background-color: #fff;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**********************************
+HEADING
+***********************************/
+
+header img#logo {
+    display: block;
+    max-width: 100%;
+
+}
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: solid 2px #c00;
+    border-radius: 30px;
+}
+
+nav a {
+    /*basic styles*/
+    color: #000;
+    text-align: center;
+/*    font-size: 15px;*/
+    font-size: .8em;
+    line-height: 30px;
+
+    /*border styles*/
+    font-weight: 800;
+    padding: 10px 10px;
+}
+
+/**********************************
+COLORS
+***********************************/
+
+body {
+    bgcolor:    "#fff";
+    link:   "#c00";
+    text:   "#000";
+    vlink:  "#c00";
+}
+
+

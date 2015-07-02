@@ -1,0 +1,6 @@
+@charset "utf-8";
+	.image
+{
+	background-image : url(image.png);
+	background-repeat : no-repeat;
+}

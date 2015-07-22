@@ -1,19 +1,19 @@
 /************************************************
  GENERAL
  ************************************************/
-article, 
-aside, 
-canvas, 
-details, 
-figcaption, 
-figure, 
-footer, 
-header, 
-hgroup, 
-menu, 
-nav, 
-section, 
-summary 
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary
 {
     display: block;
 }
@@ -27,10 +27,13 @@ body {
     Background pattern for all pages.
 *********************************************/
     background-color: #eee;
-    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
-    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+    // background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+    // linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+    background-image: linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
+    linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);
     background-size: 64px 64px;
     background-position:0 0, 32px 32px;
+    padding: 0px;
 }
 
 #wrapper {
@@ -45,8 +48,9 @@ body {
     height: auto;
 }
 
-#canvas {
+.canvas {
   background-color: #fff;
+    border: solid 0.7em #000;
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
@@ -71,40 +75,49 @@ header img#logo {
 }
 
 /**********************************
+General
+***********************************/
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**********************************
 NAVIGATION
 ***********************************/
 
-nav {
-  text-align: center;
-  padding: 15px 0;
-  margin: 0 0 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-nav li {
+.fixed-pill {
     display: inline-block;
     width: 100px;
     height: 30px;
-    border: solid 2px #c00;
-    border-radius: 30px;
 }
 
-nav a {
-    /*basic styles*/
-    color: #000;
+.nav-pills,
+.nav-pills > li {
     text-align: center;
-/*    font-size: 15px;*/
-    font-size: .8em;
+    padding: 15px 5px;
+    float: none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+.nav-pills > li > a {
+    border: solid 2px #c00;
+    border-radius: 30px;
     line-height: 30px;
-
-    /*border styles*/
-    font-weight: 800;
     padding: 10px 10px;
+    color: #c00;
+    background-color: #fff;
+}
+.nav-pills > li + li {
+    margin-left: 2px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+    color: #c00;
+    background-color: #9af;
 }
 
 /**********************************

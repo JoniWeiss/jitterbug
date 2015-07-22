@@ -27,14 +27,26 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
         <script src="js/prefixfree.js"></script>
+        <script type='text/javascript'>
+            var jumboHeight = $('.jumbotron').outerHeight();
+            function parallax(){
+                var scrolled = $(window).scrollTop();
+                $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+            }
+            $(window).scroll(function(e){
+                parallax();
+            });
+        </script>
 	</head>
     <body role="document">
         <div id="wrapper" class="container canvas">
             <header>
                 <div class="jumbotron">
-                    <img class="img-responsive" src="assets/header.png" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+<!--
+                    <img class="img-responsive" src="assets/jitterbug.png" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+-->
                 </div>
-                    <nav class="header clearfix">
+                    <nav>
                         <ul id="menu" class="nav nav-pills">
                             <li role="presentation" class="active"><a href="#"><span class="fixed-pill">Home</span></a></li>
                             <li role="presentation"><a href="beverages.html"><span class="fixed-pill">Beverages</span></a></li>
@@ -43,7 +55,6 @@
                             <li role="presentation"><a href="map.html"><span class="fixed-pill">Visit Us</span></a></li>
                         </ul>
                     </nav>
-                    <h3 class="text-muted">Project name</h3>
             </header>
             <section class="center">
                     <h2>A Lot More Than Just Coffee</h2>

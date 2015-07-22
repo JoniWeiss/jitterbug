@@ -15,6 +15,9 @@
       max-width: 80%;
     }
 
+    .jumbotron {
+        height: 30rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -32,12 +35,20 @@
     #wrapper {
       background-color: orange;
     }
+
+    .jumbotron {
+        height: 20rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
     #wrapper {
       background-color: red;
       max-width: 88%;
+    }
+
+    .jumbotron {
+        height: 15rem;
     }
 /*
     h2 {

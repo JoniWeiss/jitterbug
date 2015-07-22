@@ -78,13 +78,20 @@ header img#logo {
 }
 
 .jumbotron {
-    background-color: transparent;
+    position: relative;
+    background: transparent url("http://jitterbugcoffeehop.com/img/5869.JPG") no-repeat center center;
+    /*width: 100%;*/
+    height: 35rem;
+    background-size: cover;
+    overflow: hidden;
 }
+
 
 /**********************************
 General
 ***********************************/
 .center {
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -130,12 +137,5 @@ NAVIGATION
     background-color: #9af;
 }
 
-/**********************************
-COLORS
-***********************************/
-
-body {
-
-}
 
 

@@ -26,8 +26,6 @@ body {
     Background pattern for all pages.
 *********************************************/
     background-color: #eee;
-    // background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
-    // linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
     background-image: linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
     linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);
     background-size: 6.4rem 6.4rem;
@@ -79,13 +77,14 @@ header img#logo {
 
 .jumbotron {
     position: relative;
-    background: transparent url("http://jitterbugcoffeehop.com/img/5869.JPG") no-repeat center center;
-    /*width: 100%;*/
+    background: transparent url("/assets/5869.JPG") no-repeat center center;
     height: 35rem;
     background-size: cover;
-    overflow: hidden;
 }
 
+.logo {
+
+}
 
 /**********************************
 General

@@ -9,7 +9,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 menu,
 nav,
 section,
@@ -31,11 +30,15 @@ body {
     // linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
     background-image: linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
     linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);
-    background-size: 64px 64px;
-    background-position:0 0, 32px 32px;
-    padding: 0px;
+    background-size: 6.4rem 6.4rem;
+    background-position:0 0, 3.2rem 3.2rem;
+    link:   #c00;
+    padding: 0;
 }
 
+a:visited {
+    color:  #c00;
+}
 #wrapper {
   background-color: darkgreen;
   max-width: 70%;
@@ -51,7 +54,7 @@ body {
 .canvas {
   background-color: #fff;
     border: solid 0.7em #000;
-  max-width: 940px;
+  max-width: 94rem;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -74,6 +77,10 @@ header img#logo {
 
 }
 
+.jumbotron {
+    background-color: transparent;
+}
+
 /**********************************
 General
 ***********************************/
@@ -86,16 +93,19 @@ General
 NAVIGATION
 ***********************************/
 
+#menu {
+    display: block;
+}
 .fixed-pill {
     display: inline-block;
-    width: 100px;
-    height: 30px;
+    width: 10rem;
+    height: 3rem;
 }
 
 .nav-pills,
 .nav-pills > li {
     text-align: center;
-    padding: 15px 5px;
+    padding: 0 0.5em;
     float: none;
     display:inline-block;
     *display:inline; /* ie7 fix */
@@ -103,15 +113,15 @@ NAVIGATION
     vertical-align: top;
 }
 .nav-pills > li > a {
-    border: solid 2px #c00;
-    border-radius: 30px;
-    line-height: 30px;
-    padding: 10px 10px;
+    border: solid 0.2rem #c00;
+    border-radius: 3rem;
+    line-height: 3rem;
+    padding: 1rem 1rem;
     color: #c00;
     background-color: #fff;
 }
 .nav-pills > li + li {
-    margin-left: 2px;
+    margin-left: 0.2rem;
 }
 .nav-pills > li.active > a,
 .nav-pills > li > a:hover,
@@ -125,10 +135,7 @@ COLORS
 ***********************************/
 
 body {
-    bgcolor:    "#fff";
-    link:   "#c00";
-    text:   "#000";
-    vlink:  "#c00";
+
 }
 
 

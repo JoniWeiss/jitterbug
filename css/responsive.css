@@ -1,22 +1,31 @@
 @media screen and (max-width: 1024px) {
     body {
-    /********************************************
-        Background pattern for all pages.
-    *********************************************/
-    background-color: #eee;
-    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
-    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
-    background-size: 4.8rem 4.8rem;
-    background-position:0 0, 2.4rem 2.4rem;
-}
+        /********************************************
+            Background pattern for all pages.
+        *********************************************/
+        background-color: #eee;
+        background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+        background-size: 4.8rem 4.8rem;
+        background-position: 0 0, 2.4rem 2.4rem;
+    }
 
     #wrapper {
-      background-color: magenta;
-      max-width: 80%;
+        background-color: magenta;
+        max-width: 80%;
     }
 
     .jumbotron {
         height: 30rem;
+    }
+
+    .fixed-pill {
+        display: inline-block;
+        width: 6.75rem;
+    }
+
+    .nav-pills > li > a {
+        line-height: 1rem;
     }
 }
 
@@ -43,33 +52,11 @@
 
 @media screen and (max-width: 480px) {
     #wrapper {
-      background-color: red;
-      max-width: 88%;
+        background-color: red;
+        max-width: 88%;
     }
 
     .jumbotron {
         height: 15rem;
     }
-/*
-    h2 {
-        font-size: 0.75em;
-    }
-*/
-
 }
-
-/*
-.nav { text-align: center; }
-.nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; }
-.nav ul li { display: inline-block; }
-.nav ul li a { display: block; text-decoration: none; color: #444; transition: 0.4s ease background; padding: 15px 20px; border-radius: 2px; background-color: #f4f4f4; }
-.nav ul li a:hover { background-color: #ccc; }
-
-@media all and (min-width:640px){
-
-	.nav { float: right; padding: 10px 0 0 0; }
-	.nav ul li a { padding: 5px 10px; }
-
-}
-*/
-

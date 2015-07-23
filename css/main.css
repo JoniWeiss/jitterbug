@@ -47,6 +47,9 @@ a:visited {
 .img-responsive {
     width: 100%;
     height: auto;
+    margin-top: 9%;
+    border-radius: 3rem;
+    border: solid 0.2rem #c00;
 }
 
 .canvas {
@@ -77,22 +80,18 @@ HEADING
 
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url(../assets/jitterbug.jpg);
+    background-image: url(../assets/5869.JPG);
     background-position: 0% 25%;
     background-size: cover;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
     background-repeat: no-repeat;
     color: white;
+    border: solid 0.2rem #c00;
     text-shadow: black 0.3em 0.3em 0.3em;
     height: 35rem;
 }
-
-/*.jumbotron {
-    position: relative;
-    background: transparent url("http://localhost:63342/jitterbug/assets/jitterbug.jpg") no-repeat center center;
-    height: 35rem;
-    background-size: cover;
-    overflow: hidden;
-}*/
 
 /**********************************
 General

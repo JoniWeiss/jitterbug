@@ -89,11 +89,6 @@ HEADING
 /*.jumbotron {
     position: relative;
     background: transparent url("http://localhost:63342/jitterbug/assets/jitterbug.jpg") no-repeat center center;
-
-    /!*
-    background: transparent url("/assets/jitterbug.png") no-repeat center center;
-    *!/
-    /!*width: 100%;*!/
     height: 35rem;
     background-size: cover;
     overflow: hidden;

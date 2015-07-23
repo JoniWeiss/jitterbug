@@ -26,8 +26,11 @@ body {
     Background pattern for all pages.
 *********************************************/
     background-color: #eee;
-    background-image: linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
-    linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);
+    /*background-image:   linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
+                        linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);*/
+    background-image:   linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black),
+                        linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black);
+
     background-size: 6.4rem 6.4rem;
     background-position:0 0, 3.2rem 3.2rem;
     link:   #c00;

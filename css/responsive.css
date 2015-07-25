@@ -17,9 +17,9 @@
         width: 8rem;
     }
 
-    .nav-pills > li > a {
+/*    .nav-pills > li > a {
         line-height: 1rem;
-    }
+    }*/
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -41,9 +41,9 @@
         width: 8rem;
     }
 
-    .nav-pills > li > a {
+/*    .nav-pills > li > a {
         line-height: 1rem;
-    }
+    }*/
 }
 
 @media screen and (max-width: 767px) {
@@ -65,7 +65,7 @@
         width: 8rem;
     }
 
-    .nav-pills > li > a {
+/*    .nav-pills > li > a {
         line-height: 1rem;
-    }
+    }*/
 }

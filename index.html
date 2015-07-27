@@ -21,8 +21,12 @@
 
         <!--BootStrap Resources:-->
         <link href="css/bootstrap.css" rel="stylesheet">
+<!--
         <link href="css/bootstrap-theme.css" rel="stylesheet">
+-->
+<!--
         <link href="css/jumbotron-narrow.css" rel="stylesheet">
+-->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,10 +53,10 @@
         <div id="wrapper" class="container">
             <header class="canvas">
                 <div class="jumbotron">
-                    <img class="img-responsive" src="assets/header-1024.png" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+                    <img id="header-img" class="img-responsive" src="assets/header-1024.png" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
                 </div>
-                <nav>
-                    <ul id="menu" class="nav nav-pills">
+                <nav id="menu">
+                    <ul class="nav nav-pills">
                         <li role="presentation" class="active">
                             <a href="#"><span class="fixed-pill">
                                 Home
@@ -60,12 +64,12 @@
                         </li>
                         <li role="presentation">
                             <a href="beverages.html"><span class="fixed-pill">
-                                Beverages
+                                Beverages Menu
                             </span></a>
                         </li>
                         <li role="presentation">
                             <a href="menu.html"><span class="fixed-pill">
-                                Menu
+                                Food Menu
                             </span></a>
                         </li>
                         <li role="presentation">
@@ -73,27 +77,26 @@
                                 Contact Us
                             </span></a>
                         </li>
-                        <li role="presentation">
-                            <a href="map.html"><span class="fixed-pill">
-                                Visit Us
-                            </span></a>
-                        </li>
                     </ul>
                 </nav>
-                <div class="row text-center">
-                    <div class="col-xs-12">
-                        <ul id="social-menu" class="nav nav-pills">
-                            <li role="presentation">
-                                <a href="http://facebook.com/jitterbugcoffee" target="_blank">
-                                    <span class="fa fa-facebook-official"></span> Visit us on FaceBook</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                    <div class="addthis_sharing_toolbox hidden-xs col-sm-12">
+                <div class="buttonbar">
+                    <div class="btn-group-lg">
 
+                        <a href="http://maps.google.com/maps?q=Jitterbug+Coffee+Hop+Salt Lake City+UT+84105"
+                           class="btn btn-info">
+                            <span class="fa fa-map-marker"> </span> 1855 S. 700 E., SLC</a>
+
+                        <a href="tel:+1-487-8100"
+                           class="btn btn-info">
+                            <span class="fa fa-phone"> </span> 801-884-7450</a>
+
+                        <a href="http://facebook.com/jitterbugcoffee"
+                            class="btn btn-info">
+                            <span class="fa fa-facebook-official"> </span> Visit us on FaceBook</a>
                     </div>
                 </div>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_sharing_toolbox buttonbar"></div>
             </header>
             <section class="canvas">
                 <h2 class="text-center">A Lot More Than Just Coffee</h2>

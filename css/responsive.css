@@ -11,15 +11,6 @@
     .jumbotron {
         height: 30rem;
     }
-
-    .fixed-pill {
-        display: inline-block;
-        width: 8rem;
-    }
-
-/*    .nav-pills > li > a {
-        line-height: 1rem;
-    }*/
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -35,15 +26,6 @@
     .jumbotron {
         height: 23rem;
     }
-
-    .fixed-pill {
-        display: inline-block;
-        width: 8rem;
-    }
-
-/*    .nav-pills > li > a {
-        line-height: 1rem;
-    }*/
 }
 
 @media screen and (max-width: 767px) {
@@ -57,15 +39,12 @@
     }
 
     .jumbotron {
+        background-color: #fff;
+        background-image: url("../assets/header-small.png");
+        background-size: auto;
+        background-origin: border-box;
+        background-position: center;
+        background-repeat: no-repeat;
         height: 17rem;
     }
-
-    .fixed-pill {
-        display: inline-block;
-        width: 8rem;
-    }
-
-/*    .nav-pills > li > a {
-        line-height: 1rem;
-    }*/
 }

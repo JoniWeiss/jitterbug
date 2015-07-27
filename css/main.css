@@ -24,7 +24,7 @@ body {
 /********************************************
     Background pattern for all pages.
 *********************************************/
-    background-color: #eee;
+    background-color: darkblue;
     /*background-image:   linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
                         linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);*/
     background-image:   linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black),
@@ -80,18 +80,9 @@ HEADING
     background-clip: padding-box;
     background-repeat: no-repeat;
     color: white;
-    border: solid 0.2rem #c00;
+    border: solid 0.3rem #c00;
     text-shadow: black 0.3em 0.3em 0.3em;
     height: 35rem;
-}
-
-/**********************************
-General
-***********************************/
-.center {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /**********************************
@@ -117,7 +108,7 @@ NAVIGATION
     vertical-align: top;
 }
 .nav-pills > li > a {
-    border: solid 0.2rem #c00;
+    border: solid 0.3rem #c00;
     border-radius: 3rem;
     line-height: 2rem;
     padding: 1rem 1rem;
@@ -146,16 +137,14 @@ NAVIGATION
 
 .btn,
 .btn-info {
-    background-image: none;
-    border: solid 0.2rem #c00;
-    background-color: #eee;
-    color: #000;
+    border: solid 0.25rem #3B5998;
+    color: #3B5998;
 }
 
 .btn-info:hover,
 .btn-info:focus {
-    background-color: #2aabd2;
-    color: #000;
+    border: solid 0.25rem #3B5998;
+    color: #3B5998;
 }
 
 .buttonbar {
@@ -163,3 +152,13 @@ NAVIGATION
     text-align: center;
 }
 
+/**********************************
+Columns and Rows
+***********************************/
+
+.vtop {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    padding-top: 2rem;
+}

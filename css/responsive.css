@@ -2,6 +2,7 @@
     body {
         background-size: 4.8rem 4.8rem;
         background-position: 0 0, 2.4rem 2.4rem;
+        background-color: darkgreen;
     }
 
     #wrapper {
@@ -17,6 +18,7 @@
     body {
         background-size: 3.2rem 3.2rem;
         background-position: 0 0, 1.6rem 1.6rem;
+        background-color: darkmagenta;
     }
 
     #wrapper {
@@ -32,6 +34,7 @@
     body {
         background-size: 3.2rem 3.2rem;
         background-position: 0 0, 1.6rem 1.6rem;
+        background-color: yellow;
     }
 
     #wrapper {

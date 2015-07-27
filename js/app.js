@@ -8,4 +8,10 @@ $(document).ready(function() {
     var jcopyright = " Copyright 2009 - " + thisYear + ", Jitterbug Coffee Hop, Salt Lake City, Utah";
 
     $("#copyright").find("p").addClass("fa fa-copyright").append(jcopyright);
+
+    $(window).resize(function(){
+        if ($(window).width() < 767){
+            $("header").find("img").addClass("hidden");
+        }
+    });
 });

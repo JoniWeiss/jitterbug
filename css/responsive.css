@@ -10,7 +10,13 @@
     }
 
     .jumbotron {
-        height: 30rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -26,7 +32,13 @@
     }
 
     .jumbotron {
-        height: 23rem;
+        padding-top: 2;
+        padding-bottom: 1;
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -42,12 +54,12 @@
     }
 
     .jumbotron {
-        background-color: #fff;
-        background-image: url("../assets/header-small.png");
-        background-size: auto;
-        background-origin: border-box;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 17rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 0;
+        padding-left: 0;
     }
 }

@@ -43,12 +43,18 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
 
+        <script src="js/prefixfree.min.js"></script>
     </head>
     <body role="document">
         <div id="wrapper" class="container">
             <header class="canvas">
                 <div class="jumbotron">
-                    <img id="header-img" class="img-responsive" src="assets/header-1024.png" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+                    <div class="container hidden-sm hidden-md hidden-lg">
+                        <img class="header-img img-responsive" src="assets/jitterbug-header-large.png" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+                    </div>
+                    <div class="container hidden-xs">
+                        <img class="header-img img-responsive" src="assets/jitterbug-header-small.png" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+                    </div>
                 </div>
                 <nav id="menu">
                     <ul class="nav nav-pills">
@@ -127,11 +133,15 @@
                 </div>
             </section>
             <footer class="canvas text-center">
-                <div class="row vtop">
-                    <div class="col-xs-12 col-lg-4 pull-left">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 pull-left">
+                        <p><strong>Hours:</strong><br>
+                            Monday through Friday: 6:30am - 8:00pm<br>Saturday: 8:00am - 8:00pm<br>Sunday: 9:00am - 6:00pm</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 pull-right">
                         <p>
                             <strong>
-                                <a href="tel:+1-487-8100">Phone: <span class="fa fa-phone"> </span> 801-487-8100
+                                <a href="tel:+1-487-8100"><span class="fa fa-phone"> </span> 801-487-8100
                                 </a>
                             </strong>
                         </p>
@@ -142,23 +152,17 @@
                                 </a>
                             </strong>
                         </p>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <p><strong>Hours:</strong><br>
-                            Monday through Friday:<br>6:30am - 8:00pm<br>Saturday: 8:00am - 8:00pm<br>Sunday: 9:00am - 6:00pm</p>
-                    </div>
-                    <div class="col-xs-12 col-lg-4 pull-right">
-                        <p><strong>For more information, email us at:</strong></p>
-                        <a href="mailto:info@jitterbugcoffeehop.com?subject=Hello%20From%20A%20Web%20Site%20Visitor"
-                           class="btn btn-info btn-lg">
-                           <span class="fa fa-envelope"> </span>
-                           info@jitterbugcoffeehop.com
-                        </a>
+                        <p>
+                            <strong>
+                                <a href="mailto:info@jitterbugcoffeehop.com?subject=Hello%20From%20A%20Web%20Site%20Visitor"> <span class="fa fa-envelope"> </span>
+                                info@jitterbugcoffeehop.com
+                                </a>
+                            </strong>
+                        </p>
                     </div>
                 </div>
-                <div class="row vtop">
-
-                    <div id="copyright" class="col-xs-12">
+                <div class="row">
+                    <div id="copyright" class="col-xs-12 col-md-12">
                         <p></p>
                         <br><br>
                     </div>

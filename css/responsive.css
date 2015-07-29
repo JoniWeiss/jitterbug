@@ -1,62 +1,96 @@
-@media screen and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     body {
-    /********************************************
-        Background pattern for all pages.
-    *********************************************/
-    background-color: #eee;
-    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
-    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
-    background-size: 48px 48px;
-    background-position:0 0, 24px 24px;
-}
-
-    #wrapper {
-      background-color: magenta;
-      max-width: 80%;
+        background-size: 4.8rem 4.8rem;
+        background-position: 0 0, 2.4rem 2.4rem;
+        background-color: darkgreen;
     }
 
+    #wrapper {
+        max-width: 90%;
+    }
+
+    .jumbotron {
+        padding-top: 2.5rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .nav-pills > li > a {
+        line-height: 2rem;
+    }
+
+    .fixed-pill {
+        width: 20rem;
+    }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     body {
-    /********************************************
-        Background pattern for all pages.
-    *********************************************/
-    background-color: #eee;
-    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
-    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
-    background-size: 32px 32px;
-    background-position:0 0, 16px 16px;
+        background-size: 3.2rem 3.2rem;
+        background-position: 0 0, 1.6rem 1.6rem;
+        background-color: darkmagenta;
+    }
+
     #wrapper {
-      background-color: orange;
+      max-width: 90%;
+    }
+
+    .jumbotron {
+        padding-top: 2.5rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .nav-pills > li > a {
+        line-height: 2rem;
+    }
+
+    .fixed-pill {
+        width: 23rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
+    body {
+        background-size: 3.2rem 3.2rem;
+        background-position: 0 0, 1.6rem 1.6rem;
+        background-color: yellow;
+    }
+
+    footer {
+        margin-bottom: 5rem;
+        padding-bottom: 5rem
+    }
+
     #wrapper {
-      background-color: red;
-      max-width: 88%;
+        max-width: 90%;
     }
-/*
-    h2 {
-        font-size: 0.75em;
+
+    .jumbotron {
+        padding-top: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
-*/
-    
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .nav-pills > li > a {
+        line-height: 2rem;
+    }
+
+    .fixed-pill {
+        width: 24rem;
+    }
 }
-
-/*
-.nav { text-align: center; }
-.nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; }
-.nav ul li { display: inline-block; }
-.nav ul li a { display: block; text-decoration: none; color: #444; transition: 0.4s ease background; padding: 15px 20px; border-radius: 2px; background-color: #f4f4f4; }
-.nav ul li a:hover { background-color: #ccc; }
-	
-@media all and (min-width:640px){
-
-	.nav { float: right; padding: 10px 0 0 0; }
-	.nav ul li a { padding: 5px 10px; }
-
-}
-*/
-

@@ -10,13 +10,22 @@
     }
 
     .jumbotron {
-        padding-top: 3rem;
-        padding-bottom: 2rem;
+        padding-top: 2.5rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .container .jumbotron,
     .container-fluid .jumbotron {
         padding-right: 0;
         padding-left: 0;
+    }
+
+    .nav-pills > li > a {
+        line-height: 2rem;
+    }
+
+    .fixed-pill {
+        width: 20rem;
     }
 }
 
@@ -32,13 +41,21 @@
     }
 
     .jumbotron {
-        padding-top: 2;
-        padding-bottom: 1;
+        padding-top: 2.5rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .container .jumbotron,
     .container-fluid .jumbotron {
         padding-right: 0;
         padding-left: 0;
+    }
+    .nav-pills > li > a {
+        line-height: 2rem;
+    }
+
+    .fixed-pill {
+        width: 23rem;
     }
 }
 
@@ -49,17 +66,31 @@
         background-color: yellow;
     }
 
+    footer {
+        margin-bottom: 5rem;
+        padding-bottom: 5rem
+    }
+
     #wrapper {
         max-width: 90%;
     }
 
     .jumbotron {
         padding-top: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .container .jumbotron,
     .container-fluid .jumbotron {
         padding-right: 0;
         padding-left: 0;
+    }
+
+    .nav-pills > li > a {
+        line-height: 2rem;
+    }
+
+    .fixed-pill {
+        width: 30rem;
     }
 }

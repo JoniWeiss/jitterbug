@@ -32,6 +32,7 @@ body {
 section > div.row {
     padding-bottom: 2.5rem;
 }
+
 footer > div.row {
     float: none;
     padding-top: 2.5rem;
@@ -69,13 +70,16 @@ img {
 HEADING
 ***********************************/
 .jumbotron {
-    padding-top: 5.5rem;
-    padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .container .jumbotron,
+.container .jumbotron .container,
 .container-fluid .jumbotron {
     padding-right: 0;
     padding-left: 0;
+
 }
 
 .header-img {
@@ -104,10 +108,11 @@ NAVIGATION
     *zoom:1; /* hasLayout ie7 trigger */
     vertical-align: top;
 }
+
 .nav-pills > li > a {
     border: solid 0.3rem #9e0704;
     border-radius: 3rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     padding: 1rem 1rem;
     color: #000;
     font-weight: bold;
@@ -127,7 +132,7 @@ NAVIGATION
 
 .fixed-pill {
     display: inline-block;
-    width: 16rem;
+    width: 10rem;
     padding: 1rem 0.75rem;
 
 }

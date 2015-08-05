@@ -17,20 +17,25 @@ body {
 /********************************************
     Background pattern for all pages.
 *********************************************/
-    background-color: #eee;
+    background-color: yellow;
     /*background-image:   linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
                         linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);*/
     background-image:   linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black),
                         linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black);
 
-    background-size: 6.4rem 6.4rem;
-    background-position:0 0, 3.2rem 3.2rem;
+    background-size: 3.2rem 3.2rem;
+    background-position: 0 0, 1.6rem 1.6rem;
     link:   #9e0704;
     padding: 0;
 }
 
 section > div.row {
     padding-bottom: 2.5rem;
+}
+
+footer {
+    margin-bottom: 5rem;
+    padding-bottom: 5rem
 }
 
 footer > div.row {
@@ -70,7 +75,7 @@ img {
 HEADING
 ***********************************/
 .jumbotron {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -112,7 +117,7 @@ NAVIGATION
 .nav-pills > li > a {
     border: solid 0.3rem #9e0704;
     border-radius: 3rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
     padding: 1rem 1rem;
     color: #000;
     font-weight: bold;
@@ -132,7 +137,7 @@ NAVIGATION
 
 .fixed-pill {
     display: inline-block;
-    width: 10rem;
+    width: 18.5rem;
     padding: 1rem 0.75rem;
 
 }
@@ -163,4 +168,67 @@ Columns and Rows
     vertical-align: top;
     float: none;
     padding-top: 2rem;
+}
+
+/**********************************
+ Media Queries
+***********************************/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-size: 3.2rem 3.2rem;
+        background-position: 0 0, 1.6rem 1.6rem;
+        background-color: darkmagenta;
+    }
+
+    .jumbotron {
+        padding-top: 2.5rem;
+    }
+
+    .nav-pills > li > a {
+        line-height: 2rem;
+    }
+
+    .fixed-pill {
+        width: 21rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-size: 4.8rem 4.8rem;
+        background-position: 0 0, 2.4rem 2.4rem;
+        background-color: darkgreen;
+    }
+
+    .jumbotron {
+        padding-top: 2.5rem;
+    }
+
+    .nav-pills > li > a {
+        line-height: 2rem;
+    }
+
+    .fixed-pill {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-size: 6.4rem 6.4rem;
+        background-position: 0 0, 3.2rem 3.2rem;
+        background-color: #eee;
+    }
+
+    .jumbotron {
+        padding-top: 4rem;
+    }
+
+    .nav-pills > li > a {
+        line-height: 1.5rem;
+    }
+
+    .fixed-pill {
+        width: 10rem;
+    }
 }

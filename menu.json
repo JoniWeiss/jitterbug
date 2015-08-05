@@ -1,0 +1,147 @@
+{
+  "beverages": {
+    "Coffee/Espresso": {
+      "Brewed": {
+        "12oz": 1.45,
+        "16oz": 1.70,
+        "20oz": 1.95,
+        "24oz": 2.20,
+        "Note": ""
+      },
+      "Cafe Au Lait": {
+        "12oz": 1.70,
+        "16oz": 1.95,
+        "20oz": 2.20,
+        "24oz": 2.45,
+        "Note": ""
+      },
+      "Cappuccino": {
+        "12oz": 2.65,
+        "16oz": 2.90,
+        "20oz": 3.40,
+        "24oz": 3.65,
+        "Note": ""
+      },
+      "Americano": {
+        "12oz": 2.30,
+        "16oz": 2.50,
+        "20oz": 2.75,
+        "24oz": 3.00,
+        "Note": ""
+      },
+      "Breve": {
+        "12oz": 3.10,
+        "16oz": 3.60,
+        "20oz": 4.10,
+        "24oz": 4.35,
+        "Note": ""
+      },
+      "Mocha Breve": {
+        "12oz": 3.60,
+        "16oz": 4.10,
+        "20oz": 4.35,
+        "24oz": 4.60,
+        "Note": ""
+      },
+      "Latte": {
+        "12oz": 2.90,
+        "16oz": 3.40,
+        "20oz": 3.65,
+        "24oz": 3.90,
+        "Note": ""
+      },
+      "Mocha Latte": {
+        "12oz": 3.20,
+        "16oz": 3.70,
+        "20oz": 4.00,
+        "24oz": 4.20,
+        "Note": ""
+      },
+      "White Mocha": {
+        "12oz": 3.45,
+        "16oz": 3.85,
+        "20oz": 4.20,
+        "24oz": 4.45,
+        "Note": ""
+      },
+      "Dark Mocha": {
+        "12oz": 3.45,
+        "16oz": 3.85,
+        "20oz": 4.20,
+        "24oz": 4.45,
+        "Note": ""
+      },
+      "English Toffee": {
+        "12oz": 3.45,
+        "16oz": 3.85,
+        "20oz": 4.20,
+        "24oz": 4.45,
+        "Note": ""
+      },
+      "Extreme Espressos": {
+        "12oz": 3.60,
+        "16oz": 4.10,
+        "20oz": 4.60,
+        "24oz": 4.85,
+        "Note": ""
+      },
+      "Chai": {
+        "12oz": 2.95,
+        "16oz": 3.45,
+        "20oz": 3.70,
+        "24oz": 3.90,
+        "Note": "Original Oregon Chai, Green Chai, Java Chai, Mocha Chai"
+      },
+      "Tazo or Numi": {
+        "12oz": "",
+        "16oz": 1.70,
+        "20oz": "",
+        "24oz": "",
+        "Note": ""
+      },
+      "Iced Tea": {
+        "12oz": "",
+        "16oz": "",
+        "20oz": "",
+        "24oz": 1.95,
+        "Note": ""
+      },
+      "Espresso Shake": {
+        "12oz": "",
+        "16oz": 3.60,
+        "20oz": 4.10,
+        "24oz": 4.35,
+        "Note": ""
+      },
+      "Mocha Shake": {
+        "12oz": "",
+        "16oz": 3.85,
+        "20oz": 4.35,
+        "24oz": 4.70,
+        "Note": ""
+      }
+    }
+  },
+  "Pastries": {
+
+  },
+  "Breakfast": {
+
+  },
+  "Lunch": {
+
+  },
+  "House Specialty Sandwiches": {
+
+  },
+  "Other": {
+    "Soup of the Day": {
+      "Price": "",
+      "Photo": ""
+    },
+    "Deluxe Nacho Platter": {
+      "Price": "",
+      "Photo": ""
+    }
+  }
+}

@@ -101,19 +101,46 @@ NAVIGATION
     text-align: center;
 }
 
-.nav {
+.button-group > li:first-child button,
+.button-group > li:first-child .button {
+    border-left: ;
+}
+
+.button-group > li > button,
+.button-group > li .button {
+    border: solid medium #9e0704;
 
 }
+
+.jitterbug {
+  background-color: #eee;
+  border-style: solid;
+  border-width: medium;
+  border-color: #9e0704;
+  color: #000;
+  border: solid medium #9e0704;
+}
+
+.jitterbug:hover,
+.jitterbug:focus {
+  background-color: #2aabd2;
+  border-style: solid;
+  border-width: medium;
+  border-color: #9e0704;
+  color: #000;
+}
+/*button,
+.button,
 .nav-pills,
 .nav-pills > li {
     padding: 0.5rem 1rem;
     float: none;
     display:inline-block;
-    *display:inline; /* ie7 fix */
-    *zoom:1; /* hasLayout ie7 trigger */
     vertical-align: top;
-}
+}*/
 
+/*button,
+.button,
 .nav-pills > li > a {
     border: solid 0.3rem #9e0704;
     border-radius: 3rem;
@@ -122,19 +149,24 @@ NAVIGATION
     color: #000;
     font-weight: bold;
     background-color: #eee;
-}
+}*/
 
+/*button,
+.button:hover,
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: #000;
     background-color: #2aabd2;
-}
+}*/
 
+button,
+.button,
 .nav-pills > li > a:hover {
     background-color: #2aabd2;
 }
 
+.button,
 .fixed-pill {
     display: inline-block;
     width: 18.5rem;
@@ -173,7 +205,7 @@ Columns and Rows
 /**********************************
  Media Queries
 ***********************************/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/*@media screen and (min-width: 768px) and (max-width: 991px) {
     body {
         background-size: 3.2rem 3.2rem;
         background-position: 0 0, 1.6rem 1.6rem;
@@ -231,4 +263,4 @@ Columns and Rows
     .fixed-pill {
         width: 10rem;
     }
-}
+}*/

@@ -20,10 +20,13 @@
         <meta property="og:image"              content="http://jitterbugcoffeehop.com/img/5860.JPG" />
         <meta property="og:locale"             content="en_US" />
 
-
+        <!--Zurb Foundation Resources:
+        ____________________________________________________________________-->
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/vendor/modernizr.js"></script>
         <!--BootStrap Resources:
         ____________________________________________________________________-->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"> -->
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -47,47 +50,47 @@
     <body role="document">
         <div id="wrapper" class="container">
             <header class="canvas">
-                <div class="jumbotron">
-                    <div class="container hidden-sm hidden-md hidden-lg">
-                        <img class="header-img img-responsive" src="assets/jitterbug-header-large.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
-                    </div>
-                    <div class="container hidden-xs">
-                        <img class="header-img img-responsive" src="assets/jitterbug-header-small.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
-                    </div>
+                <div class="show-for-small-only">
+                    <img class="header-img img-responsive" src="assets/jitterbug-header-large.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
                 </div>
-                <nav id="menu">
-                    <ul class="nav nav-pills">
-                        <li role="presentation" class="active">
-                            <a href="#"><span class="fixed-pill">
+                <div class="show-for-medium-up">
+                    <img class="header-img img-responsive" src="assets/jitterbug-header-small.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+                </div>
+                <nav class="row">
+                    <div class="large-12 columns">
+                    <ul class="button-group stack-for-small even-6 round">
+                        <li role="presentation">
+                            <a href="#"><span class="small primary button round jitterbug">
                                 Home
                             </span></a>
                         </li>
                         <li role="presentation">
-                            <a href="#"><span class="fixed-pill">
+                            <a href="#"><span class="small secondary button round jitterbug">
                                 Beverages
                             </span></a>
                         </li>
                         <li role="presentation">
-                            <a href="#"><span class="fixed-pill">
+                            <a href="#"><span class="small secondary button round jitterbug">
                                 Food Menu
                             </span></a>
                         </li>
                         <li role="presentation">
                             <a href="http://maps.google.com/maps?q=Jitterbug+Coffee+Hop+Salt Lake City+UT+84105"
-                               target="_blank"><span class="fixed-pill">
+                               target="_blank"><span class="small secondary button round jitterbug">
                                <span class="fa fa-map-marker"> </span> Map</span></a>
                         </li>
                         <li role="presentation">
                             <a href="tel:+1-487-8100"
-                               target="_blank"><span class="fixed-pill">
+                               target="_blank"><span class="small secondary button round jitterbug">
                                <span class="fa fa-phone"> </span> Call Us</span></a>
                         </li>
                         <li role="presentation">
-                            <a href="#"><span class="fixed-pill">
+                            <a href="#"><span class="small secondary button round jitterbug">
                                 About Us
                             </span></a>
                         </li>
                     </ul>
+                    </div>
                 </nav>
                 <div class="buttonbar">
                         <a href="http://facebook.com/jitterbugcoffee"
@@ -171,10 +174,18 @@
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55b297f422ca93ce" async="async"></script>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <!-- jQuery (necessary for Bootstrap or Foundation) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- Script resources for Foundation: -->
+        <script src="js/foundation.min.js"></script>
+        <script>
+          $(document).foundation();
+        </script>
+        <!-- Script resources for Bootstrap: -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+
+        <!-- Script resources for JitterBug Site: -->
         <script src="js/app.js"></script>
     </body>
 </html>

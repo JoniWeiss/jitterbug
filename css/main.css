@@ -25,7 +25,6 @@ body {
 
     background-size: 3.2rem 3.2rem;
     background-position: 0 0, 1.6rem 1.6rem;
-    link:   #9e0704;
     padding: 0;
 }
 
@@ -48,13 +47,6 @@ img {
     max-width: 100%;
 }
 
-#wrapper {
-  background-color: #000;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0.5% 0.5%;
-}
-
 .img-responsive {
     width: 100%;
     height: auto;
@@ -62,7 +54,14 @@ img {
     border: solid 0.2rem #9e0704;
 }
 
-.canvas {
+#wrapper {
+  background-color: #000;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 0.5% 0.5%;
+}
+
+.jitterbug-content {
   background-color: #eee;
   border-radius: .5rem;
   border: solid 0.1rem #aaa;
@@ -101,77 +100,25 @@ NAVIGATION
     text-align: center;
 }
 
-.button-group > li:first-child button,
-.button-group > li:first-child .button {
-    border-left: ;
-}
-
-.button-group > li > button,
-.button-group > li .button {
-    border: solid medium #9e0704;
-
-}
-
-.jitterbug {
-  background-color: #eee;
-  border-style: solid;
-  border-width: medium;
-  border-color: #9e0704;
-  color: #000;
-  border: solid medium #9e0704;
-}
-
-.jitterbug:hover,
-.jitterbug:focus {
-  background-color: #2aabd2;
-  border-style: solid;
-  border-width: medium;
-  border-color: #9e0704;
-  color: #000;
-}
-/*button,
-.button,
-.nav-pills,
-.nav-pills > li {
-    padding: 0.5rem 1rem;
-    float: none;
-    display:inline-block;
-    vertical-align: top;
-}*/
-
-/*button,
-.button,
-.nav-pills > li > a {
-    border: solid 0.3rem #9e0704;
-    border-radius: 3rem;
-    line-height: 2rem;
-    padding: 1rem 1rem;
+nav a.button {
+    border: solid 0.2rem #9e0704;
+    background: #2aabd2;
+    font-size: 0.75em;
     color: #000;
-    font-weight: bold;
-    background-color: #eee;
-}*/
-
-/*button,
-.button:hover,
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-    color: #000;
-    background-color: #2aabd2;
-}*/
-
-button,
-.button,
-.nav-pills > li > a:hover {
-    background-color: #2aabd2;
+    text-transform: capitalize;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 15%;
 }
 
-.button,
-.fixed-pill {
-    display: inline-block;
-    width: 18.5rem;
-    padding: 1rem 0.75rem;
+nav a.button.secondary {
+    border: solid 0.2rem #9e0704;
+    background: #eee;
+}
 
+nav .button:hover,
+nav .button:active {
+    background: #2aabd2;
 }
 
 .btn,
@@ -187,80 +134,54 @@ button,
 }
 
 .buttonbar {
-    margin: 2rem;
+    margin: 0.5rem auto;
     text-align: center;
-}
-
-/**********************************
-Columns and Rows
-***********************************/
-
-.vtop {
-    display: inline-block;
-    vertical-align: top;
-    float: none;
-    padding-top: 2rem;
 }
 
 /**********************************
  Media Queries
 ***********************************/
-/*@media screen and (min-width: 768px) and (max-width: 991px) {
+/*Medium screens*/
+@media only screen and (min-width: 40.063em) {
     body {
         background-size: 3.2rem 3.2rem;
         background-position: 0 0, 1.6rem 1.6rem;
         background-color: darkmagenta;
     }
 
+    #wrapper {
+        max-width: 80%;
+    }
+
     .jumbotron {
         padding-top: 2.5rem;
     }
+}
 
-    .nav-pills > li > a {
-        line-height: 2rem;
+/*Large screens*/
+@media only screen and (min-width: 64.063em) {
+    body {
+        background-color: green;
     }
 
-    .fixed-pill {
-        width: 21rem;
+    #wrapper {
+        max-width: 75%;
+    }
+
+    .jumbotron {
+        padding-top: 2.5rem;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+/*XLarge screens*/
+@media only screen and (min-width: 90.063em) {
     body {
         background-size: 4.8rem 4.8rem;
         background-position: 0 0, 2.4rem 2.4rem;
-        background-color: darkgreen;
-    }
-
-    .jumbotron {
-        padding-top: 2.5rem;
-    }
-
-    .nav-pills > li > a {
-        line-height: 2rem;
-    }
-
-    .fixed-pill {
-        width: 20rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    body {
-        background-size: 6.4rem 6.4rem;
-        background-position: 0 0, 3.2rem 3.2rem;
         background-color: #eee;
     }
 
     .jumbotron {
         padding-top: 4rem;
     }
-
-    .nav-pills > li > a {
-        line-height: 1.5rem;
-    }
-
-    .fixed-pill {
-        width: 10rem;
-    }
-}*/
+}

@@ -96,7 +96,7 @@ NAVIGATION
 
 .menu {
     display: block;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     text-align: center;
 }
 
@@ -112,8 +112,7 @@ div a.button {
     font-weight: bold;
     color: #000;
     text-transform: capitalize;
-    padding-top: 1.563em;
-    padding-bottom: 1.563em;
+    padding: 1.563em 1.563em;
     width: 100%;
     max-width: 20rem;
 }

@@ -100,30 +100,31 @@ NAVIGATION
     text-align: center;
 }
 
+a.small.round.button,
 a.small.round.button.secondary {
-    margin-bottom: 0;
+    margin: 1rem auto;
 }
 
-nav a.button {
+div a.button {
     border: solid 0.2rem #9e0704;
     background: #2aabd2;
     /*font-size: 0.75em;*/
     font-weight: bold;
     color: #000;
     text-transform: capitalize;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 1.563em;
+    padding-bottom: 1.563em;
     width: 100%;
     max-width: 20rem;
 }
 
-nav a.button.secondary {
+div a.button.secondary {
     border: solid 0.2rem #9e0704;
     background: #eee;
 }
 
-nav .button:hover,
-nav .button:active {
+div .button:hover,
+div .button:active {
     background: #2aabd2;
 }
 
@@ -158,16 +159,21 @@ nav .button:active {
     }
 
     #wrapper {
-        max-width: 80%;
+        max-width: 85%;
     }
 
     .jumbotron {
         padding-top: 2.5rem;
     }
 
+    div.small-12.medium-6.large-2.columns {
+        padding-left: 0.02rem;
+        padding-right: 0.02rem;
+    }
+
     nav a.button {
         width: 100%;
-        max-width: 20rem;
+        max-width: 12rem;
     }
 }
 

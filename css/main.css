@@ -94,21 +94,27 @@ HEADING
 NAVIGATION
 ***********************************/
 
-#menu {
+.menu {
     display: block;
     margin: 1rem auto;
     text-align: center;
 }
 
+a.small.round.button.secondary {
+    margin-bottom: 0;
+}
+
 nav a.button {
     border: solid 0.2rem #9e0704;
     background: #2aabd2;
-    font-size: 0.75em;
+    /*font-size: 0.75em;*/
+    font-weight: bold;
     color: #000;
     text-transform: capitalize;
     padding-top: 25px;
     padding-bottom: 25px;
-    width: 15%;
+    width: 100%;
+    max-width: 20rem;
 }
 
 nav a.button.secondary {
@@ -121,21 +127,23 @@ nav .button:active {
     background: #2aabd2;
 }
 
-.btn,
-.btn-info {
-    border: solid 0.25rem #3B5998;
-    color: #3B5998;
-}
-
-.btn-info:hover,
-.btn-info:focus {
-    border: solid 0.25rem #3B5998;
-    color: #3B5998;
-}
-
-.buttonbar {
+.social {
+    display: block;
     margin: 0.5rem auto;
     text-align: center;
+    font-weight: bold;
+    width: 100%;
+    max-width: 18.6rem;
+}
+
+.social a.button {
+    border: solid 0.25rem #eee;
+    background: #eee;
+}
+
+.social a.button:hover,
+.social a.button:focus {
+    border: solid 0.25rem #3B5998;
 }
 
 /**********************************
@@ -156,6 +164,11 @@ nav .button:active {
     .jumbotron {
         padding-top: 2.5rem;
     }
+
+    nav a.button {
+        width: 100%;
+        max-width: 20rem;
+    }
 }
 
 /*Large screens*/
@@ -171,6 +184,16 @@ nav .button:active {
     .jumbotron {
         padding-top: 2.5rem;
     }
+
+    div.small-12.medium-6.large-2.columns {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+
+    nav a.button {
+        width: 100%;
+        max-width: 20rem;
+    }
 }
 
 /*XLarge screens*/
@@ -183,5 +206,10 @@ nav .button:active {
 
     .jumbotron {
         padding-top: 4rem;
+    }
+
+    nav a.button {
+        width: 100%;
+        max-width: 25rem;
     }
 }

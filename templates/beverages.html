@@ -2,3 +2,137 @@
     <h2 class="text-center">Beverages Menu</h2>
     <p>Ask about our non-dairy options</p>
 </div>
+<div>
+    <table>
+      <thead>
+        <tr>
+          <th width="60%">Expresso/Coffee</th>
+          <th>12 oz</th>
+          <th>16 oz</th>
+          <th>20 oz</th>
+          <th>24 oz</th>
+        </tr>
+        <tr>
+            <th width=100%></th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "coffee"'>
+        <tr>
+          <td>{{beverage.name}}</td>
+          <td>{{beverage.size12 | currency}}</td>
+          <td>{{beverage.size16 | currency}}</td>
+          <td>{{beverage.size20 | currency}}</td>
+          <td>{{beverage.size24 | currency}}</td>
+        </tr>
+        <tr>
+          <td><small>{{beverage.note}}</small></td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th width="60%">Tea</th>
+          <th>12 oz</th>
+          <th>16 oz</th>
+          <th>20 oz</th>
+          <th>24 oz</th>
+        </tr>
+        <tr>
+            <th width=100%></th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "tea"'>
+        <tr>
+          <td>{{beverage.name}}</td>
+          <td>{{beverage.size12 | currency}}</td>
+          <td>{{beverage.size16 | currency}}</td>
+          <td>{{beverage.size20 | currency}}</td>
+          <td>{{beverage.size24 | currency}}</td>
+        </tr>
+        <tr>
+          <td><small>{{beverage.note}}</small></td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th width="60%">Shakes</th>
+          <th>12 oz</th>
+          <th>16 oz</th>
+          <th>20 oz</th>
+          <th>24 oz</th>
+        </tr>
+        <tr>
+            <th width=100%></th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "shake"'>
+        <tr>
+          <td>{{beverage.name}}</td>
+          <td>{{beverage.size12 | currency}}</td>
+          <td>{{beverage.size16 | currency}}</td>
+          <td>{{beverage.size20 | currency}}</td>
+          <td>{{beverage.size24 | currency}}</td>
+        </tr>
+        <tr>
+          <td><small>{{beverage.note}}</small></td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th width="60%">Blended Ice</th>
+          <th>12 oz</th>
+          <th>16 oz</th>
+          <th>20 oz</th>
+          <th>24 oz</th>
+        </tr>
+        <tr>
+            <th width=100%></th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "blended-ice"'>
+        <tr>
+          <td>{{beverage.name}}</td>
+          <td>{{beverage.size12 | currency}}</td>
+          <td>{{beverage.size16 | currency}}</td>
+          <td>{{beverage.size20 | currency}}</td>
+          <td>{{beverage.size24 | currency}}</td>
+        </tr>
+        <tr>
+          <td><small>{{beverage.note}}</small></td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th width="60%">Other</th>
+          <th>12 oz</th>
+          <th>16 oz</th>
+          <th>20 oz</th>
+          <th>24 oz</th>
+        </tr>
+        <tr>
+            <th width=100%></th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "other"'>
+        <tr>
+          <td>{{beverage.name}}</td>
+          <td>{{beverage.size12 | currency}}</td>
+          <td>{{beverage.size16 | currency}}</td>
+          <td>{{beverage.size20 | currency}}</td>
+          <td>{{beverage.size24 | currency}}</td>
+        </tr>
+        <tr>
+          <td><small>{{beverage.note}}</small></td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Latte, Steamer, and Italian Soda Flavors:</h4>
+    <p>Vanilla, Hazelnut, Amaretto, Caramel, Almond, Mint, Orange, Raspberry, Cherry, Toasted Marshmallow, Mango, Lime, Blackberry, Lemon, Boysenberry, Peach, Blueberry, Strawberry, Coconut, Tiramisu, Almond Roca, Butterscotch, Cinnamon, Pumpkin Spice, Butter Rum & Irish Cream.</p>
+</div>

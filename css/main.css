@@ -147,6 +147,72 @@ div .button:active {
 }
 
 /**********************************
+ Table Styles
+***********************************/
+.rwd-table {
+  margin: 1em 0;
+  background: inherit;
+  color: inherit;
+  border-radius: .4em;
+  overflow: hidden;
+  /*width: 100%;*/
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-color: inherit;
+}
+
+.rwd-table th {
+  display: none;
+  text-style: bold;
+  background-color: #2aabd2;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table th, .rwd-table td {
+  text-align: left;
+  margin: .5em 1em;
+}
+
+.rwd-table th:first-child,
+.rwd-table td:first-child {
+    /*min-width: 40em;*/
+    background-color: #2aabd2;
+}
+
+.rwd-table td:first-child {
+  padding-top: .5em;
+  text-style: bold;
+  /*background-color: #2aabd2;*/
+}
+
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+
+.rwd-table th, .rwd-table td:before {
+  text-style: bold;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+
+.drink-name {
+    text-style: bold;
+}
+
+/**********************************
  Media Queries
 ***********************************/
 /*Medium screens*/
@@ -173,6 +239,37 @@ div .button:active {
     nav a.button {
         width: 100%;
         max-width: 14rem;
+    }
+
+    .rwd-table th {
+    /*min-width: 40em;*/
+    background-color: #2aabd2;
+    }
+
+    .rwd-table th, .rwd-table td {
+        display: table-cell;
+        padding: .25em .5em;
+        padding: 1em !important;
+    }
+    .rwd-table th:first-child,
+    .rwd-table td:first-child {
+        padding-left: 0;
+    }
+    .rwd-table th:last-child,
+    .rwd-table td:last-child {
+        padding-right: 0;
+    }
+    .rwd-table td:before {
+        display: none;
+    }
+
+    .rwd-table th {
+      /*min-width: 40em;*/
+          background-color: #2aabd2;
+    }
+
+    .rwd-table td:first-child {
+          background-color: #eee;
     }
 }
 

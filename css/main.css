@@ -402,6 +402,10 @@ div .meta-data {
         padding: 1em;
     }
 
+    .table-row .title {
+        border-bottom: thin dotted #2aabd2;
+    }
+
     .table-row .title,
     .table-row-hr .title {
         width: 50%;

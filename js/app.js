@@ -7,6 +7,17 @@ var app = angular.module('jitterbug-app', [
     'menuControllers'
 ]);
 
+app.filter('myFilter', function() {
+
+  return function(input) {
+    var newInput = [];
+    angular.forEach(input, function(item) {
+      console.log(item);
+      if (item !== "") newInput.push(item);
+    });
+    return newInput;
+  };
+});
 
 app.config(function($routeProvider){
       $routeProvider

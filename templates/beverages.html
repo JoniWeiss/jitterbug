@@ -1,100 +1,115 @@
-<div>
-    <h2 class="text-center">Beverages Menu</h2>
-    <p>Ask about our non-dairy options</p>
-</div>
-<div>
-    <table class="rwd-table">
-      <thead>
-        <tr>
-          <th colspan="8">Espresso/Coffee</th>
-          <th>12 oz</th>
-          <th>16 oz</th>
-          <th>20 oz</th>
-          <th>24 oz</th>
-        </tr>
-      </thead>
-      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "coffee"'>
-        <tr>
-          <td colspan="8" data-th="Drink">{{beverage.name}}</td>
-          <td data-th="12 oz">{{beverage.size12 | currency}}</td>
-          <td data-th="16 oz">{{beverage.size16 | currency}}</td>
-          <td data-th="20 oz">{{beverage.size20 | currency}}</td>
-          <td data-th="24 oz">{{beverage.size24 | currency}}</td>
-        </tr>
-      </tbody>
-      <thead>
-        <tr>
-          <th colspan="8">Tea</th>
-          <th>12 oz</th>
-          <th>16 oz</th>
-          <th>20 oz</th>
-          <th>24 oz</th>
-        </tr>
-      </thead>
-      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "tea"'>
-        <tr>
-          <td colspan="8" data-th="Drink">{{beverage.name}}</td>
-          <td data-th="12 oz">{{beverage.size12 | currency}}</td>
-          <td data-th="16 oz">{{beverage.size16 | currency}}</td>
-          <td data-th="20 oz">{{beverage.size20 | currency}}</td>
-          <td data-th="24 oz">{{beverage.size24 | currency}}</td>
-        </tr>
-      </tbody>
-      <thead>
-        <tr>
-          <th colspan="8">Shakes</th>
-          <th>12 oz</th>
-          <th>16 oz</th>
-          <th>20 oz</th>
-          <th>24 oz</th>
-        </tr>
-      </thead>
-      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "shake"'>
-        <tr>
-          <td colspan="8" data-th="Drink">{{beverage.name}}</td>
-          <td data-th="12 oz">{{beverage.size12 | currency}}</td>
-          <td data-th="16 oz">{{beverage.size16 | currency}}</td>
-          <td data-th="20 oz">{{beverage.size20 | currency}}</td>
-          <td data-th="24 oz">{{beverage.size24 | currency}}</td>
-        </tr>
-      </tbody>
-      <thead>
-        <tr>
-          <th colspan="8">Blended Ice</th>
-          <th>12 oz</th>
-          <th>16 oz</th>
-          <th>20 oz</th>
-          <th>24 oz</th>
-        </tr>
-      </thead>
-      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "blended-ice"'>
-        <tr>
-          <td colspan="8" data-th="Drink">{{beverage.name}}</td>
-          <td data-th="12 oz">{{beverage.size12 | currency}}</td>
-          <td data-th="16 oz">{{beverage.size16 | currency}}</td>
-          <td data-th="20 oz">{{beverage.size20 | currency}}</td>
-          <td data-th="24 oz">{{beverage.size24 | currency}}</td>
-        </tr>
-      </tbody>
-      <thead>
-        <tr>
-          <th colspan="8">Other</th>
-          <th>12 oz</th>
-          <th>16 oz</th>
-          <th>20 oz</th>
-          <th>24 oz</th>
-        </tr>
-      </thead>
-      <tbody ng-repeat="beverage in beverages" ng-if='beverage.type == "other"'>
-        <tr>
-          <td colspan="8" data-th="Drink">{{beverage.name}}</td>
-          <td data-th="12 oz">{{beverage.size12 | currency}}</td>
-          <td data-th="16 oz">{{beverage.size16 | currency}}</td>
-          <td data-th="20 oz">{{beverage.size20 | currency}}</td>
-          <td data-th="24 oz">{{beverage.size24 | currency}}</td>
-        </tr>
-      </tbody>
-    </table>
+<div ng-controller="BeveragesCtrl">
+    <div>
+        <h2 class="text-center">Beverages Menu</h2>
+        <p>Ask about our non-dairy options</p>
+    </div>
+    <!-- <accordion close-others="oneAtATime">
+        <accordion-group heading="Coffee / Espresso" is-open="true"> -->
+                <div class="table-row-hr">
+                    <div class="title">Coffee / Espresso</div>
+                    <div class="meta-data">
+                        <div class="col price12">12 oz</div>
+                        <div class="col price16">16 oz</div>
+                        <div class="col price20">20 oz</div>
+                        <div class="col price24">24 oz</div>
+                    </div>
+                </div>
+                <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "coffee"'>
+                    <div class="title">{{beverage.name}}</div>
+                    <div class="meta-data">
+                        <div class="col price12">{{beverage.size12 | currency}}</div>
+                        <div class="col price16">{{beverage.size16 | currency}}</div>
+                        <div class="col price20">{{beverage.size20 | currency}}</div>
+                        <div class="col price24">{{beverage.size24 | currency}}</div>
+                    </div>
+                    <div class="note">{{beverage.note}}</div>
+                </div>
+        <!-- </accordion-group>
+        <accordion-group heading="Tea" is-open="false"> -->
+                <div class="table-row-hr">
+                    <div class="title">Tea</div>
+                    <div class="meta-data">
+                        <div class="col price12">12 oz</div>
+                        <div class="col price16">16 oz</div>
+                        <div class="col price20">20 oz</div>
+                        <div class="col price24">24 oz</div>
+                    </div>
+                </div>
+                <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "tea"'>
+                    <div class="title">{{beverage.name}}</div>
+                    <div class="meta-data">
+                        <div class="col price12">{{beverage.size12 | currency}}</div>
+                        <div class="col price16">{{beverage.size16 | currency}}</div>
+                        <div class="col price20">{{beverage.size20 | currency}}</div>
+                        <div class="col price24">{{beverage.size24 | currency}}</div>
+                    </div>
+                    <div class="note">{{beverage.note}}</div>
+                </div>
+        <!-- </accordion-group>
+        <accordion-group heading="Tea" is-open="false"> -->
+                <div class="table-row-hr">
+                    <div class="title">Shakes</div>
+                    <div class="meta-data">
+                        <div class="col price12">12 oz</div>
+                        <div class="col price16">16 oz</div>
+                        <div class="col price20">20 oz</div>
+                        <div class="col price24">24 oz</div>
+                    </div>
+                </div>
+                <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "shake"'>
+                    <div class="title">{{beverage.name}}</div>
+                    <div class="meta-data">
+                        <div class="col price12">{{beverage.size12 | currency}}</div>
+                        <div class="col price16">{{beverage.size16 | currency}}</div>
+                        <div class="col price20">{{beverage.size20 | currency}}</div>
+                        <div class="col price24">{{beverage.size24 | currency}}</div>
+                    </div>
+                    <div class="note">{{beverage.note}}</div>
+                </div>
+        <!-- </accordion-group>
+        <accordion-group heading="Tea" is-open="false"> -->
+                <div class="table-row-hr">
+                    <div class="title">Blended Ice</div>
+                    <div class="meta-data">
+                        <div class="col price12">12 oz</div>
+                        <div class="col price16">16 oz</div>
+                        <div class="col price20">20 oz</div>
+                        <div class="col price24">24 oz</div>
+                    </div>
+                </div>
+                <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "blended-ice"'>
+                    <div class="title">{{beverage.name}}</div>
+                    <div class="meta-data">
+                        <div class="col price12">{{beverage.size12 | currency}}</div>
+                        <div class="col price16">{{beverage.size16 | currency}}</div>
+                        <div class="col price20">{{beverage.size20 | currency}}</div>
+                        <div class="col price24">{{beverage.size24 | currency}}</div>
+                    </div>
+                    <div class="note">{{beverage.note}}</div>
+                </div>
+        <!-- </accordion-group>
+        <accordion-group heading="Tea" is-open="false"> -->
+                <div class="table-row-hr">
+                    <div class="title">Other Drinks</div>
+                    <div class="meta-data">
+                        <div class="col price12">12 oz</div>
+                        <div class="col price16">16 oz</div>
+                        <div class="col price20">20 oz</div>
+                        <div class="col price24">24 oz</div>
+                    </div>
+                </div>
+                <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "other"'>
+                    <div class="title">{{beverage.name}}</div>
+                    <div class="meta-data">
+                        <div class="col price12">{{beverage.size12 | currency}}</div>
+                        <div class="col price16">{{beverage.size16 | currency}}</div>
+                        <div class="col price20">{{beverage.size20 | currency}}</div>
+                        <div class="col price24">{{beverage.size24 | currency}}</div>
+                    </div>
+                    <div class="note">{{beverage.note}}</div>
+                </div>
+        <!-- </accordion-group>
+    </accordion> -->
     <h4>Latte, Steamer, and Italian Soda Flavors:</h4>
     <p>Vanilla, Hazelnut, Amaretto, Caramel, Almond, Mint, Orange, Raspberry, Cherry, Toasted Marshmallow, Mango, Lime, Blackberry, Lemon, Boysenberry, Peach, Blueberry, Strawberry, Coconut, Tiramisu, Almond Roca, Butterscotch, Cinnamon, Pumpkin Spice, Butter Rum & Irish Cream.</p>
 </div>

@@ -28,7 +28,7 @@ body {
     padding: 0;
 }
 
-section > div.row {
+section > div.table-row {
     padding-bottom: 2.5rem;
 }
 
@@ -37,7 +37,7 @@ footer {
     padding-bottom: 5rem
 }
 
-footer > div.row {
+footer > div.table-row {
     float: none;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -147,7 +147,7 @@ div .button:active {
 }
 
 /**********************************
- Table Styles
+ Table Styles - Tables
 ***********************************/
 .rwd-table {
   margin: 1em 0;
@@ -213,6 +213,127 @@ div .button:active {
 }
 
 /**********************************
+ Table Styles - Divs
+***********************************/
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  padding: 2em;
+}
+
+.table-row,
+.table-row-hr {
+    position: relative;
+}
+
+.table-row *,
+.table-row-hr * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.table-row .title,
+.table-row-hr .title {
+    min-width: 40%;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+div .title {
+    padding: 0.5em 0.5em 0 0.5em;
+}
+
+div .note,
+div .meta-data {
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+.table-row .title, {
+    display: block;
+    clear: left;
+}
+
+.table-row .price12,
+.table-row .price16,
+.table-row .price20,
+.table-row .price24,
+.table-row-hr .price12,
+.table-row-hr .price16,
+.table-row-hr .price20,
+.table-row-hr .price24 {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.table-row-hr {
+  background-color: #247cbd;
+  color: #eee;
+}
+.table-row {
+  border-bottom: 1px solid #dbecf8;
+}
+
+.table-row-hr .meta-data {
+  display: inline-block;
+  position: relative;
+}
+
+.table-row .note,
+.table-row .meta-data > * {
+    /*width: auto;*/
+    display: inline-block;
+}
+
+.table-row .meta-data > *,
+.table-row-hr .meta-data > * {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.table-row-hr .price12,
+.table-row-hr .price16,
+.table-row-hr .price20,
+.table-row-hr .price24 {
+    color: #eee;
+}
+
+.table-row .note,
+.table-row .price12,
+.table-row .price16,
+.table-row .price20,
+.table-row .price24 {
+  color: #247cbd;
+}
+
+
+/*.table-row .meta-data .col:before {
+    display: block;
+    text-transform: uppercase;
+    font-size: .7em;
+}*/
+
+
+
+  /*.table-row .price12:before {
+    content: '12oz';
+  }
+
+  .table-row .price16:before {
+    content: '16oz';
+  }
+
+  .table-row .price20:before {
+    content: '20oz';
+  }
+
+  .table-row .price24:before {
+    content: '20oz';
+  }*/
+
+/**********************************
  Media Queries
 ***********************************/
 /*Medium screens*/
@@ -270,6 +391,44 @@ div .button:active {
 
     .rwd-table td:first-child {
           background-color: #eee;
+    }
+
+    div .title {
+        padding: 1em;
+    }
+
+    div .note,
+    div .meta-data {
+        padding: 1em;
+    }
+
+    .table-row .title,
+    .table-row-hr .title {
+        width: 50%;
+        /*cursor: pointer;*/
+        font-weight: 700;
+        font-size: 1em;
+        padding: 0 1rem;
+    }
+
+    .table-row .title {
+      /*padding: 1rem;*/
+      display: inline-block;
+      clear: left;
+    }
+
+    .table-row .note,
+    .table-row .meta-data,
+    .table-row-hr .meta-data {
+      width: 45%;
+    }
+
+    .table-row .meta-data > *,
+    .table-row-hr .meta-data > * {
+        width: 20%;
+        /*padding: 0 0.5rem;*/
+        /*cursor: pointer;*/
+        display: inline-block;
     }
 }
 

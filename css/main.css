@@ -282,8 +282,8 @@ div .meta-data {
 }
 
 .table-row .note,
+.table-row-hr .note,
 .table-row .meta-data > * {
-    /*width: auto;*/
     display: inline-block;
 }
 
@@ -293,6 +293,7 @@ div .meta-data {
   cursor: pointer;
 }
 
+.table-row-hr .note,
 .table-row-hr .price12,
 .table-row-hr .price16,
 .table-row-hr .price20,
@@ -421,7 +422,12 @@ div .meta-data {
       clear: left;
     }
 
+    div .note,
     .table-row .note,
+    .table-row-hr .note {
+        width: 100%;
+    }
+
     .table-row .meta-data,
     .table-row-hr .meta-data {
       width: 45%;

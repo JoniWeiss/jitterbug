@@ -10,7 +10,7 @@ menuControllers.controller('BeveragesCtrl', ['$scope', '$http',
 
   menuControllers.controller('FoodCtrl', ['$scope', '$http',
     function($scope, $http) {
-      $http.get('js/food.json').success(function(data) {
-        $scope.food = data;
+      $http.get('js/foodmenu.json').success(function(data) {
+        $scope.foodmenu = data;
       });
     }]);

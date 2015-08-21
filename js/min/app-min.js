@@ -8,25 +8,6 @@ var app = angular.module("jitterBug", [
     "smoothScroll"
     ]);
 
-// app.run(
-//   [          '$rootScope', '$state', '$stateParams',
-//     function ($rootScope,   $state,   $stateParams) {
-
-//     // It's very handy to add references to $state and $stateParams to the $rootScope
-//     // so that you can access them from any scope within your applications.For example,
-//     // <li ng-class="{ active: $state.includes('contacts.list') }"> will set the <li>
-//     // to active whenever 'contacts.list' or one of its decendents is active.
-//     $rootScope.$state = $state;
-//     $rootScope.$stateParams = $stateParams;
-//     $rootScope.$on('$stateChangeSuccess', 
-//         function() {
-//             $uiViewScroll('#contentTop');
-//         }
-//     );
-//     }
-//   ]
-// );
-
 app.config(
     [         '$stateProvider', '$urlRouterProvider',
       function($stateProvider, $urlRouterProvider) {
@@ -65,7 +46,7 @@ app.config(
 
 app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
   function($scope, smoothScroll) {
-    var element = document.getElementById('contentTop');
+    var element = document.getElementById('scrollTop');
     var options = {
         duration: 700,
         easing: 'easeInQuad',
@@ -79,7 +60,7 @@ app.controller('BeveragesCtrl', ['$scope', '$http', 'smoothScroll',
       $scope.beverages = data;
       $scope.oneAtATime = true;
     });
-    var element = document.getElementById('contentTop');
+    var element = document.getElementById('scrollTop');
     var options = {
         duration: 700,
         easing: 'easeInQuad',
@@ -93,7 +74,7 @@ app.controller('FoodCtrl', ['$scope', '$http', 'smoothScroll',
     $http.get('js/foodmenu.json').success(function(data) {
       $scope.foodmenu = data;
     });
-    var element = document.getElementById('contentTop');
+    var element = document.getElementById('scrollTop');
     var options = {
         duration: 700,
         easing: 'easeInQuad',
@@ -101,6 +82,25 @@ app.controller('FoodCtrl', ['$scope', '$http', 'smoothScroll',
     smoothScroll(element, options);  }
 ]);
 
+app.controller('MapCtrl', ['$scope', 'smoothScroll',
+  function($scope, smoothScroll) {
+    var element = document.getElementById('scrollTop');
+    var options = {
+        duration: 700,
+        easing: 'easeInQuad',
+    };
+    smoothScroll(element, options);  }
+]);
+
+app.controller('AboutCtrl', ['$scope', 'smoothScroll',
+  function($scope, smoothScroll) {
+    var element = document.getElementById('scrollTop');
+    var options = {
+        duration: 700,
+        easing: 'easeInQuad',
+    };
+    smoothScroll(element, options);  }
+]);
 
 app.controller('MainCtrl', ['$scope',
     function ($scope) {

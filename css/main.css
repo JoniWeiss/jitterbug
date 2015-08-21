@@ -123,6 +123,12 @@ div .button:active {
     background: #2aabd2;
 }
 
+.open-close {
+    background-color: #2aabd2;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
 .social {
     display: block;
     margin: 0.5rem auto;
@@ -164,6 +170,26 @@ to prevent collapsing during animation*/
     transition:all 2s ease-in-out;
 }
 
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 15%;
+    bottom: 5%;
+    background: #2aabd2 url("../assets/up-arrow.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+a:hover.back-to-top {
+    background-color: #247cbd;
+}
+
+
 /**********************************
  Table Styles - Divs
 ***********************************/
@@ -194,6 +220,13 @@ body {
     font-weight: 700;
 }
 
+.table-row .title-food,
+.table-row-hr .title-food {
+    min-width: 80%;
+    font-size: 1em;
+    font-weight: 700;
+}
+
 div .title {
     padding: 0.5em 0.5em 0 0.5em;
 }
@@ -204,14 +237,16 @@ div .meta-data {
 }
 
 .table-row .title, {
-    display: block;
+    display: inline-block;
     clear: left;
 }
 
+.table-row .price,
 .table-row .price12,
 .table-row .price16,
 .table-row .price20,
 .table-row .price24,
+.table-row-hr .price,
 .table-row-hr .price12,
 .table-row-hr .price16,
 .table-row-hr .price20,
@@ -246,6 +281,7 @@ div .meta-data {
 }
 
 .table-row-hr .note,
+.table-row-hr .price,
 .table-row-hr .price12,
 .table-row-hr .price16,
 .table-row-hr .price20,
@@ -254,6 +290,7 @@ div .meta-data {
 }
 
 .table-row .note,
+.table-row .price,
 .table-row .price12,
 .table-row .price16,
 .table-row .price20,
@@ -290,37 +327,6 @@ div .meta-data {
         max-width: 14rem;
     }
 
-    .rwd-table th {
-    /*min-width: 40em;*/
-    background-color: #2aabd2;
-    }
-
-    .rwd-table th, .rwd-table td {
-        display: table-cell;
-        padding: .25em .5em;
-        padding: 1em !important;
-    }
-    .rwd-table th:first-child,
-    .rwd-table td:first-child {
-        padding-left: 0;
-    }
-    .rwd-table th:last-child,
-    .rwd-table td:last-child {
-        padding-right: 0;
-    }
-    .rwd-table td:before {
-        display: none;
-    }
-
-    .rwd-table th {
-      /*min-width: 40em;*/
-          background-color: #2aabd2;
-    }
-
-    .rwd-table td:first-child {
-          background-color: #eee;
-    }
-
     div .title {
         padding: 1em;
     }
@@ -330,16 +336,27 @@ div .meta-data {
         padding: 1em;
     }
 
-    .table-row .title {
+    .table {
+        width: 40%;
+    }
+    .table-row .title,
+    .table-row .title-food {
         border-bottom: thin dotted #2aabd2;
     }
 
     .table-row .title,
     .table-row-hr .title {
         width: 50%;
-        /*cursor: pointer;*/
-        font-weight: 700;
         font-size: 1em;
+        font-weight: 700;
+        padding: 0 1rem;
+    }
+
+    .table-row .title-food,
+    .table-row-hr .title-food {
+        min-width: 93%;
+        font-size: 1em;
+        font-weight: 700;
         padding: 0 1rem;
     }
 
@@ -352,17 +369,17 @@ div .meta-data {
     div .note,
     .table-row .note,
     .table-row-hr .note {
-        width: 100%;
+        width: 80%;
     }
 
     .table-row .meta-data,
     .table-row-hr .meta-data {
-      width: 45%;
+      width: 40%;
     }
 
     .table-row .meta-data > *,
     .table-row-hr .meta-data > * {
-        width: 20%;
+        width: 15%;
         /*padding: 0 0.5rem;*/
         /*cursor: pointer;*/
         display: inline-block;
@@ -391,24 +408,6 @@ div .meta-data {
     nav a.button {
         width: 100%;
         max-width: 20rem;
-    }
-    a.back-to-top {
-        display: none;
-        width: 60px;
-        height: 60px;
-        text-indent: -9999px;
-        position: fixed;
-        z-index: 999;
-        right: 15%;
-        bottom: 5%;
-        background: #2aabd2 url("../assets/up-arrow.png") no-repeat center 43%;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
-    }
-
-    a:hover.back-to-top {
-        background-color: #247cbd;
     }
 }
 

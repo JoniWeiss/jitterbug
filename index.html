@@ -27,7 +27,7 @@
 
         <!--Additional Font Resources:
         ____________________________________________________________________-->
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Merriweather+Sans:400,700,800' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Ubuntu:400,500,700|Merriweather+Sans:400,700,800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/font-awesome.min.css">
 
         <!--Local Customization:
@@ -45,27 +45,33 @@
                  Header (Begin)
             **************************** -->
             <header class="jitterbug-content">
-                <div class="show-for-small-only">
-                    <img class="header-img img-responsive" src="assets/jitterbug-header-large.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84106 | Phone: (801) 487-8100">
-                </div>
-                <div class="show-for-medium-up">
-                    <img class="header-img img-responsive" src="assets/jitterbug-header-small.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84106 | Phone: (801) 487-8100">
-                </div>
+                <a ui-sref="home">
+                    <img class="header-img img-responsive" 
+                        data-interchange="[assets/jitterbug-header-small.jpg, (default)],
+                                          [assets/jitterbug-header-large.jpg, (small-only)]">
+                    <noscript><img src="assets/jitterbug-header-large.jpg"></noscript>
+<!--                     <div class="show-for-small-only">
+                        <img class="header-img img-responsive" src="assets/jitterbug-header-large.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84106 | Phone: (801) 487-8100">
+                    </div>
+                    <div class="show-for-medium-up">
+                        <img class="header-img img-responsive" src="assets/jitterbug-header-small.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84106 | Phone: (801) 487-8100">
+                    </div> -->
+                </a>
                 <!-- ***********************
                      Navigation (Begin)
                 **************************** -->
-                <div id="contentTop" class="sticky">
+                <div id="navTop" class="sticky">
                     <nav class="row menu">
                         <div class="small-12 medium-6 large-2 columns">
-                            <a href="#/" class="small round button expand">Home</a>
+                            <a ui-sref="home" class="small round button expand">Home</a>
                         </div>
-                        <div class="small-12 medium-6 large-2 columns">
+                        <div id="navBeverages" class="small-12 medium-6 large-2 columns">
                             <a ui-sref="beveragesMenu" class="small round button expand secondary">Beverages</a>
                         </div>
-                        <div class="small-12 medium-6 large-2 columns">
+                        <div id="navFood" class="small-12 medium-6 large-2 columns">
                             <a ui-sref="foodMenu" class="small round button expand secondary">Food Menu</a>
                         </div>
-                        <div class="small-12 medium-6 large-2 columns">
+                        <div id="navMap" class="small-12 medium-6 large-2 columns">
                             <a ui-sref="mapToUs" class="small round button expand secondary">
                                 <span><span class="fa fa-map-marker"> </span> Map</span>
                             </a>
@@ -75,7 +81,7 @@
                                 <span><span class="fa fa-phone"> </span> Call Us</span>
                             </a>
                         </div>
-                        <div class="small-12 medium-6 large-2 columns">
+                        <div id="navAbout" class="small-12 medium-6 large-2 columns">
                             <a ui-sref="aboutUs" class="small round button expand secondary">About Us</a>
                         </div>
                     </nav>
@@ -83,6 +89,9 @@
                 <!-- ***********************
                      Navigation (End)
                 **************************** -->
+                <div class="row social">
+                    <p class="text-center open-close"></p>
+                </div>
                 <div class="row social">
                     <div class="show-for-small-up">
                         <a href="http://facebook.com/jitterbugcoffee"
@@ -98,7 +107,7 @@
             <!-- ***********************
                  Header (End)
             **************************** -->
-            <section ui-view-container class="jitterbug-content">
+            <section ui-view-container id="scrollTop" class="jitterbug-content">
                 <div ui-view>
                 <!-- All Main Page Content will be placed here by the Angular UI.Router -->
                 </div>
@@ -111,6 +120,7 @@
                     <div class="small-12 medium-6 columns">
                         <p><strong>Hours:</strong><br>
                             Monday through Friday: 6:30am - 8:00pm<br>Saturday: 8:00am - 8:00pm<br>Sunday: 9:00am - 6:00pm</p>
+                        <p class="open-close"></p>
                     </div>
                     <div class="small-12 medium-6 columns">
                         <p>
@@ -154,7 +164,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js"></script>
         // <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.js"></script>
+        // <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.js"></script>
         <script src="js/angular-smooth-scroll.js"></script>
 
         
@@ -171,6 +181,7 @@
         </script>
 
         <!-- Script resources for JitterBug Site: -->
+        <script src="js/moment.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

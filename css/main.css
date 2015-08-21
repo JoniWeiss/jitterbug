@@ -11,15 +11,11 @@
  ************************************************/
 
 body {
-/*    font-family: 'Allerta', sans-serif;*/
     font-family: 'Merriweather Sans', sans-serif;
-/*    font-family: 'Ubuntu', sans-serif;*/
 /********************************************
     Background pattern for all pages.
 *********************************************/
     background-color: yellow;
-    /*background-image:   linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
-                        linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);*/
     background-image:   linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black),
                         linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black);
 
@@ -146,70 +142,26 @@ div .button:active {
     border: solid 0.25rem #3B5998;
 }
 
-/**********************************
- Table Styles - Tables
-***********************************/
-.rwd-table {
-  margin: 1em 0;
-  background: inherit;
-  color: inherit;
-  border-radius: .4em;
-  overflow: hidden;
-  /*width: 100%;*/
-  min-width: 100%;
-  border-collapse: collapse;
+/* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+.jitterbug-content[ui-view]{
+ height: 65px; 
 }
 
-.rwd-table tr {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  border-color: inherit;
+.ui-view-container {
+  position: relative;
 }
 
-.rwd-table th {
-  display: none;
-  text-style: bold;
-  background-color: #2aabd2;
-}
-
-.rwd-table td {
-  display: block;
-}
-
-.rwd-table th, .rwd-table td {
-  text-align: left;
-  margin: .5em 1em;
-}
-
-.rwd-table th:first-child,
-.rwd-table td:first-child {
-    /*min-width: 40em;*/
-    background-color: #2aabd2;
-}
-
-.rwd-table td:first-child {
-  padding-top: .5em;
-  text-style: bold;
-  /*background-color: #2aabd2;*/
-}
-
-.rwd-table td:last-child {
-  padding-bottom: .5em;
-}
-
-.rwd-table th, .rwd-table td:before {
-  text-style: bold;
-}
-
-.rwd-table td:before {
-  content: attr(data-th) ": ";
-  font-weight: bold;
-  width: 6.5em;
-  display: inline-block;
-}
-
-.drink-name {
-    text-style: bold;
+.scrl,
+[ui-view].ng-enter,
+[ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all 2s ease-in-out;
+    -moz-transition:all 2s ease-in-out;
+    -o-transition:all 2s ease-in-out;
+    transition:all 2s ease-in-out;
 }
 
 /**********************************
@@ -308,31 +260,6 @@ div .meta-data {
 .table-row .price24 {
   color: #247cbd;
 }
-
-
-/*.table-row .meta-data .col:before {
-    display: block;
-    text-transform: uppercase;
-    font-size: .7em;
-}*/
-
-
-
-  /*.table-row .price12:before {
-    content: '12oz';
-  }
-
-  .table-row .price16:before {
-    content: '16oz';
-  }
-
-  .table-row .price20:before {
-    content: '20oz';
-  }
-
-  .table-row .price24:before {
-    content: '20oz';
-  }*/
 
 /**********************************
  Media Queries
@@ -464,6 +391,24 @@ div .meta-data {
     nav a.button {
         width: 100%;
         max-width: 20rem;
+    }
+    a.back-to-top {
+        display: none;
+        width: 60px;
+        height: 60px;
+        text-indent: -9999px;
+        position: fixed;
+        z-index: 999;
+        right: 15%;
+        bottom: 5%;
+        background: #2aabd2 url("../assets/up-arrow.png") no-repeat center 43%;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+
+    a:hover.back-to-top {
+        background-color: #247cbd;
     }
 }
 

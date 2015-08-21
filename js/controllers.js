@@ -1,16 +1,24 @@
-var menuControllers = angular.module('menuControllers',[]);
+var appControllers = angular.module('appControllers',[]);
 
-menuControllers.controller('BeveragesCtrl', ['$scope', '$http',
+appControllers.controller('BeveragesCtrl', ['$scope', '$http',
   function($scope, $http) {
     $http.get('js/beverages.json').success(function(data) {
       $scope.beverages = data;
       $scope.oneAtATime = true;
     });
-  }]);
+  }
+]);
 
-  menuControllers.controller('FoodCtrl', ['$scope', '$http',
-    function($scope, $http) {
-      $http.get('js/foodmenu.json').success(function(data) {
-        $scope.foodmenu = data;
-      });
-    }]);
+appControllers.controller('FoodCtrl', ['$scope', '$http',
+  function($scope, $http) {
+    $http.get('js/foodmenu.json').success(function(data) {
+      $scope.foodmenu = data;
+    });
+  }
+]);
+
+appControllers.controller('appController', ['$scope', 
+  function($scope) {
+    $scope.message="Hello world";
+  }
+]);

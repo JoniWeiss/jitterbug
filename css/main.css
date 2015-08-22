@@ -217,13 +217,24 @@ body {
 .table-row-hr .title {
     min-width: 40%;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 .table-row .title-food,
 .table-row-hr .title-food {
     min-width: 80%;
+    min-width: calc(100% - 5em);
     font-size: 1em;
+    font-weight: normal;
+}
+
+div .table-row-hr {
+    margin-top: 1em;
+    padding-top: 0.5em
+}
+
+.table-row-hr .title,
+.table-row-hr .title-food {
     font-weight: 700;
 }
 
@@ -237,7 +248,7 @@ div .meta-data {
 }
 
 .table-row .title, {
-    display: inline-block;
+    display: block;
     clear: left;
 }
 
@@ -274,8 +285,10 @@ div .meta-data {
     display: inline-block;
 }
 
+.price,
 .table-row .meta-data > *,
 .table-row-hr .meta-data > * {
+  min-width: 4em;
   padding: 0 0.5rem;
   cursor: pointer;
 }
@@ -333,12 +346,9 @@ div .meta-data {
 
     div .note,
     div .meta-data {
-        padding: 1em;
+        padding: 0 1em 1em 1em;
     }
 
-    .table {
-        width: 40%;
-    }
     .table-row .title,
     .table-row .title-food {
         border-bottom: thin dotted #2aabd2;
@@ -346,18 +356,30 @@ div .meta-data {
 
     .table-row .title,
     .table-row-hr .title {
-        width: 50%;
+        min-width: 80%;
+        min-width: calc(100% - 17em);
         font-size: 1em;
-        font-weight: 700;
+        font-weight: normal;
         padding: 0 1rem;
     }
 
     .table-row .title-food,
     .table-row-hr .title-food {
         min-width: 93%;
+        min-width: calc(100% - 4.5em);
         font-size: 1em;
-        font-weight: 700;
+        font-weight: normal;
         padding: 0 1rem;
+    }
+
+    div .table-row-hr {
+        margin-top: 2em;
+        padding-top: 1em
+    }
+
+    .table-row-hr .title,
+    .table-row-hr .title-food {
+        font-weight: 700;
     }
 
     .table-row .title {
@@ -369,17 +391,17 @@ div .meta-data {
     div .note,
     .table-row .note,
     .table-row-hr .note {
-        width: 80%;
+        width: 100%;
     }
 
-    .table-row .meta-data,
+/*    .table-row .meta-data,
     .table-row-hr .meta-data {
-      width: 40%;
-    }
+      width: 16em;
+    }*/
 
     .table-row .meta-data > *,
     .table-row-hr .meta-data > * {
-        width: 15%;
+        width: 4em;
         /*padding: 0 0.5rem;*/
         /*cursor: pointer;*/
         display: inline-block;

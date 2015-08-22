@@ -2,9 +2,7 @@
  * Created by joniweiss on 7/24/15.
  */
 var app = angular.module("jitterBug", [
-    "ngRoute",
     "ui.router",
-    "ngAnimate",
     "smoothScroll"
     ]);
 

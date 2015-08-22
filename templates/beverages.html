@@ -1,7 +1,7 @@
 <div ng-controller="BeveragesCtrl">
     <div>
         <h2 class="text-center">Beverages Menu</h2>
-        <p>Ask about our non-dairy options</p>
+        <p class="text-center"><i>Ask about our non-dairy options</i></p>
     </div>
     <!-- <accordion close-others="oneAtATime">
         <accordion-group heading="Coffee / Espresso" is-open="true"> -->
@@ -22,7 +22,7 @@
                         <div class="col price20">{{beverage.size20}}</div>
                         <div class="col price24">{{beverage.size24}}</div>
                     </div>
-                    <div class="note">{{beverage.note}}</div>
+                    <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
                 </div>
         <!-- </accordion-group>
         <accordion-group heading="Tea" is-open="false"> -->
@@ -43,7 +43,7 @@
                         <div class="col price20">{{beverage.size20}}</div>
                         <div class="col price24">{{beverage.size24}}</div>
                     </div>
-                    <div class="note">{{beverage.note}}</div>
+                    <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
                 </div>
         <!-- </accordion-group>
         <accordion-group heading="Tea" is-open="false"> -->
@@ -64,7 +64,7 @@
                         <div class="col price20">{{beverage.size20}}</div>
                         <div class="col price24">{{beverage.size24}}</div>
                     </div>
-                    <div class="note">{{beverage.note}}</div>
+                    <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
                 </div>
         <!-- </accordion-group>
         <accordion-group heading="Tea" is-open="false"> -->
@@ -85,7 +85,7 @@
                         <div class="col price20">{{beverage.size20}}</div>
                         <div class="col price24">{{beverage.size24}}</div>
                     </div>
-                    <div class="note">{{beverage.note}}</div>
+                    <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
                 </div>
         <!-- </accordion-group>
         <accordion-group heading="Tea" is-open="false"> -->
@@ -106,7 +106,7 @@
                         <div class="col price20">{{beverage.size20}}</div>
                         <div class="col price24">{{beverage.size24}}</div>
                     </div>
-                    <div class="note">{{beverage.note}}</div>
+                    <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
                 </div>
         <!-- </accordion-group>
     </accordion> -->

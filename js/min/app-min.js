@@ -38,9 +38,76 @@ app.config(
             controller: 'DefaultCtrl'
         });
       }
-
     ]
 );
+
+app.directive('copyrightString', function() {
+    return {
+        restrict: 'E',
+        replace: true,
+        transclude: false,
+        template: '<span class="fa fa-copyright"></span>',
+        link:  function (scope, element) {
+            var thisYear = new Date().getFullYear();
+            var jcopyright = " Copyright 2002 - " + thisYear + ", Jitterbug Coffee Hop, Salt Lake City, Utah";
+            element.text(jcopyright);
+        }
+    };
+});
+
+app.directive('openClosed', function($parse, $filter) {
+    return {
+        restrict: 'E',
+        replace: true,
+        transclude: false,
+        template: '<span class="open-close"></span>',
+        link: function (scope, element) {
+            var open = '';
+            var currentDate = new Date();
+            var timeNow =  $filter('date')(currentDate, 'HHmm');
+            var dayOfWeek =  $filter('date')(currentDate, 'EEE');
+            switch (dayOfWeek) {
+                case 'Mon':
+                case 'Tue':
+                case 'Wed':
+                case 'Thu':
+                    if (( timeNow >= 0630) && (timeNow <= 2000)) {
+                        open = "We're open today until 8 pm.";
+                    } else {
+                        open = "Closed. We open tomorrow at 6:30am.";
+                    }
+                    break;
+                case 'Fri':
+                     if (( timeNow >= 0630) && (timeNow <= 2000)) {
+                        open = "We're open today until 8 pm.";
+                    } else {
+                        open = "Closed. We open tomorrow at 8 am.";
+                    }
+                    break;
+                case 'Sat':
+                    if ((timeNow >= 0800) && (timeNow <= 2000)) {
+                        open = "We're open today until 8 pm.";
+                    } else {
+                        open = "Closed. We open tomorrow at 9 am.";
+                    }
+                    break;
+                case 'Sun':
+                    if ((timeNow >= 0900) && (timeNow <= 1800)) {
+                        open = "We're open today until 6 pm.";
+                    } else {
+                        open = "Closed. We open tomorrow at 6:30am.";
+                    }
+                    break;
+                    default:
+                    open = "We are currently closed.";
+                    break;
+            }
+            
+            
+            element.text(open);
+        }
+};
+});
 
 app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
   function($scope, smoothScroll) {

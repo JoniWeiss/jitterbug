@@ -52,7 +52,7 @@ img {
 
 #wrapper {
   background-color: #000;
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
   padding: 0.5% 0.5%;
 }
@@ -323,7 +323,7 @@ div .meta-data {
     }
 
     #wrapper {
-        max-width: 85%;
+        max-width: 90%;
     }
 
     .jumbotron {
@@ -415,7 +415,7 @@ div .meta-data {
     }
 
     #wrapper {
-        max-width: 75%;
+        max-width: 85%;
     }
 
     .jumbotron {

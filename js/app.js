@@ -41,6 +41,36 @@ app.config(
     ]
 );
 
+app.directive('backToTop', [function() {
+    return {
+        restrict: 'E',
+        transclude: true,
+        replace: true,
+        template: '<a href="#" class="back-to-top">Back to Top</a>',
+        link: function(scope, element) {
+
+            var amountScrolled = Math.round(screen.height * 0.5);
+
+            scope.button = element.find('button');
+
+            scope.button.on('click', function() {
+                document.body.animate({ scrollTop: 0 }, 'fast');
+                element.removeClass('show');
+            });
+
+            window.addEventListener('scroll', function() {
+                if ($(window).scrollTop() > amountScrolled) {
+                     $('a.back-to-top').fadeIn('slow');
+                 } else {
+                     $('a.back-to-top').fadeOut('slow');
+                 }
+            });
+        }
+    };
+
+}]);
+
+
 app.directive('copyrightString', function() {
     return {
         restrict: 'E',
@@ -102,8 +132,8 @@ app.directive('openClosed', function($parse, $filter) {
                     open = "We are currently closed.";
                     break;
             }
-            
-            
+
+
             element.text(open);
         }
 };

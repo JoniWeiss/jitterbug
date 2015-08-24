@@ -148,10 +148,10 @@ div .button:active {
     border: solid 0.25rem #3B5998;
 }
 
-/* Have to set height explicity on ui-view 
+/* Have to set height explicity on ui-view
 to prevent collapsing during animation*/
 .jitterbug-content[ui-view]{
- height: 65px; 
+ height: 65px;
 }
 
 .ui-view-container {
@@ -177,7 +177,7 @@ a.back-to-top {
     text-indent: -9999px;
     position: fixed;
     z-index: 999;
-    right: 15%;
+    right: 1%;
     bottom: 5%;
     background: #2aabd2 url("../assets/up-arrow.png") no-repeat center 43%;
     -webkit-border-radius: 30px;
@@ -216,6 +216,7 @@ body {
 .table-row .title,
 .table-row-hr .title {
     min-width: 40%;
+    min-width: calc(100% - 12em);
     font-size: 1em;
     font-weight: normal;
 }
@@ -263,7 +264,7 @@ div .meta-data {
 .table-row-hr .price20,
 .table-row-hr .price24 {
     text-align: right;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .table-row-hr {
@@ -340,6 +341,10 @@ div .meta-data {
         max-width: 14rem;
     }
 
+    a.back-to-top {
+        right: 7.1%;
+    }
+
     div .title {
         padding: 1em;
     }
@@ -356,8 +361,8 @@ div .meta-data {
 
     .table-row .title,
     .table-row-hr .title {
-        min-width: 80%;
-        min-width: calc(100% - 17em);
+        min-width: 65%;
+        min-width: calc(100% - 20em);
         font-size: 1em;
         font-weight: normal;
         padding: 0 1rem;
@@ -431,6 +436,10 @@ div .meta-data {
         width: 100%;
         max-width: 20rem;
     }
+
+    a.back-to-top {
+        right: 10%;
+    }
 }
 
 /*XLarge screens*/
@@ -448,5 +457,9 @@ div .meta-data {
     nav a.button {
         width: 100%;
         max-width: 25rem;
+    }
+
+    a.back-to-top {
+        right: 12%;
     }
 }

@@ -97,8 +97,9 @@ HEADING
 
 }
 
-.header-img {
+#header-image {
     border: solid 0.5rem #9e0704;
+    margin-top: 0.5rem;
 }
 
 /**********************************
@@ -342,8 +343,8 @@ div .meta-data {
         max-width: 90%;
     }
 
-    .jumbotron {
-        padding-top: 2.5rem;
+    #header-image {
+        margin-top: 1.5rem;
     }
 
     div.small-12.medium-6.large-2.columns {
@@ -438,10 +439,6 @@ div .meta-data {
         max-width: 85%;
     }
 
-    .jumbotron {
-        padding-top: 2.5rem;
-    }
-
     div.small-12.medium-6.large-2.columns {
         padding-left: 0.25rem;
         padding-right: 0.25rem;
@@ -465,8 +462,8 @@ div .meta-data {
         /*background-color: #eee;*/
     /*}*/
 
-    .jumbotron {
-        padding-top: 4rem;
+    #header-image {
+        margin-top: 2.5rem;
     }
 
     nav a.button {

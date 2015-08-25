@@ -92,7 +92,9 @@ app.directive('openClosed', function($parse, $filter) {
         transclude: false,
         template: '<span class="open-close"></span>',
         link: function (scope, element) {
-            var open = '';
+            var status = '';
+            var openMsg = 'Shop & Drive-Thru open today until ';
+            var closedMsg = 'Closed. Shop and Drive-Thru open tomorrow at ';
             var currentDate = new Date();
             var timeNow =  $filter('date')(currentDate, 'HHmm');
             var dayOfWeek =  $filter('date')(currentDate, 'EEE');
@@ -102,39 +104,39 @@ app.directive('openClosed', function($parse, $filter) {
                 case 'Wed':
                 case 'Thu':
                     if (( timeNow >= 0630) && (timeNow <= 2000)) {
-                        open = "We're open today until 8 pm.";
+                        status = openMsg + "8 pm.";
                     } else {
-                        open = "Closed. We open tomorrow at 6:30am.";
+                        status = closedMsg + "6:30am.";
                     }
                     break;
                 case 'Fri':
                      if (( timeNow >= 0630) && (timeNow <= 2000)) {
-                        open = "We're open today until 8 pm.";
+                         status = openMsg + "8 pm.";
                     } else {
-                        open = "Closed. We open tomorrow at 8 am.";
+                         status = closedMsg + "8 am.";
                     }
                     break;
                 case 'Sat':
                     if ((timeNow >= 0800) && (timeNow <= 2000)) {
-                        open = "We're open today until 8 pm.";
+                        status = openMsg +  "9 pm.";
                     } else {
-                        open = "Closed. We open tomorrow at 9 am.";
+                        status = closedMsg +  "9 am.";
                     }
                     break;
                 case 'Sun':
                     if ((timeNow >= 0900) && (timeNow <= 1800)) {
-                        open = "We're open today until 6 pm.";
+                        status = openMsg + "6 pm.";
                     } else {
-                        open = "Closed. We open tomorrow at 6:30am.";
+                        status = closedMsg +  "6:30am.";
                     }
                     break;
                     default:
-                    open = "We are currently closed.";
+                        status = "We are currently closed.";
                     break;
             }
 
 
-            element.text(open);
+            element.text(status);
         }
 };
 });

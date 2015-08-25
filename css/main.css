@@ -89,7 +89,7 @@ img {
   border: solid 0.1rem #aaa;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 1%;
 }
 
 /**********************************
@@ -159,10 +159,11 @@ div .button:active {
 .social {
     display: block;
     margin: 0.5rem auto;
+    padding: 0 1rem;
     text-align: center;
     font-weight: bold;
     width: 100%;
-    max-width: 18.6rem;
+    max-width: 22rem;
 }
 
 .social a.button {
@@ -234,6 +235,17 @@ body {
     position: relative;
 }
 
+div .table-row-hr {
+    background-color: #247cbd;
+    color: #eee;
+    margin-top: 2em;
+    padding-top: 1em;
+    min-width: 95%;
+    border-radius: 25px;
+    border: solid 0.2rem #9e0704;
+    color: #eee;
+}
+
 .table-row *,
 .table-row-hr * {
     display: inline-block;
@@ -256,17 +268,13 @@ body {
     font-weight: normal;
 }
 
-div .table-row-hr {
-    margin-top: 1em;
-    padding-top: 0.5em
-}
-
 .table-row-hr .title,
 .table-row-hr .title-food {
     font-weight: 700;
 }
 
-div .title {
+div .title,
+div .title-food {
     padding: 0.5em 0.5em 0 0.5em;
 }
 
@@ -294,12 +302,6 @@ div .meta-data {
     font-size: 1em;
 }
 
-.table-row-hr {
-  background-color: #247cbd;
-  border-radius: 25px;
-  border: solid 0.2rem #9e0704;
-  color: #eee;
-}
 .table-row {
   border-bottom: 1px solid #dbecf8;
 }
@@ -408,7 +410,12 @@ div .meta-data {
 
     div .table-row-hr {
         margin-top: 2em;
-        padding-top: 1em
+        padding-top: 1em;
+        background-color: #247cbd;
+        min-width: 95%;
+        border-radius: 25px;
+        border: solid 0.2rem #9e0704;
+        color: #eee;
     }
 
     .table-row-hr .title,

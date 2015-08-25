@@ -1,0 +1,292 @@
+[
+    {
+        "type": "coffee",
+        "name": "Brewed",
+        "size12": "$1.45",
+        "size16": "$1.70",
+        "size20": "$1.95",
+        "size24": "$2.20",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Cafe Au Lait",
+        "size12": "$1.70",
+        "size16": "$1.95",
+        "size20": "$2.20",
+        "size24": "$2.45",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Cappuccino",
+        "size12": "$2.65",
+        "size16": "$2.90",
+        "size20": "$3.40",
+        "size24": "$3.65",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Americano",
+        "size12": "$2.30",
+        "size16": "$2.50",
+        "size20": "$2.75",
+        "size24": "$3.00",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Breve",
+        "size12": "$3.10",
+        "size16": "$3.60",
+        "size20": "$4.10",
+        "size24": "$4.35",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Mocha Breve",
+        "size12": "$3.60",
+        "size16": "$4.10",
+        "size20": "$4.35",
+        "size24": "$4.60",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Latte",
+        "size12": "$2.90",
+        "size16": "$3.40",
+        "size20": "$3.65",
+        "size24": "$3.90",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Mocha Latte",
+        "size12": "$3.20",
+        "size16": "$3.70",
+        "size20": "$4.00",
+        "size24": "$4.20",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "White Mocha",
+        "size12": "$3.45",
+        "size16": "$3.85",
+        "size20": "$4.20",
+        "size24": "$4.45",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Dark Mocha",
+        "size12": "$3.45",
+        "size16": "$3.85",
+        "size20": "$4.20",
+        "size24": "$4.45",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "English Toffee",
+        "size12": "$3.45",
+        "size16": "$3.85",
+        "size20": "$4.20",
+        "size24": "$4.45",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "coffee",
+        "name": "Extreme Espressos",
+        "size12": "$3.60",
+        "size16": "$4.10",
+        "size20": "$4.60",
+        "size24": "$4.85",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "tea",
+        "name": "Chai",
+        "size12": "$2.95",
+        "size16": "$3.45",
+        "size20": "$3.70",
+        "size24": "$3.90",
+        "image": "",
+        "note": "Original Oregon Chai, Green Chai, Java Chai, Mocha Chai"
+    },
+    {
+        "type": "tea",
+        "name": "Tazo or Numi",
+        "size12": "",
+        "size16": "$1.70",
+        "size20": "",
+        "size24": "",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "tea",
+        "name": "Iced Tea",
+        "size12": "",
+        "size16": "",
+        "size20": "",
+        "size24": "$1.95",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "shake",
+        "name": "Espresso Shake",
+        "size12": "",
+        "size16": "$3.60",
+        "size20": "$4.10",
+        "size24": "$4.35",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "shake",
+        "name": "Mocha Shake",
+        "size12": "",
+        "size16": "$3.85",
+        "size20": "$4.35",
+        "size24": "$4.70",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "blended-ice",
+        "name": "Mochaccino",
+        "size12": "",
+        "size16": "$3.35",
+        "size20": "$3.75",
+        "size24": "$4.15",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "blended-ice",
+        "name": "Vanilla Ice",
+        "size12": "",
+        "size16": "$3.35",
+        "size20": "$3.75",
+        "size24": "$4.15",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "Hot Chocolate",
+        "size12": "$2.00",
+        "size16": "$2.35",
+        "size20": "$2.70",
+        "size24": "",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "White Hot Chocolate",
+        "size12": "$2.20",
+        "size16": "$2.55",
+        "size20": "$2.85",
+        "size24": "",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "Steamers",
+        "size12": "$1.90",
+        "size16": "$2.10",
+        "size20": "$2.30",
+        "size24": "",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "Rootbeer Float",
+        "size12": "",
+        "size16": "$2.45",
+        "size20": "$2.70",
+        "size24": "$2.95",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "Italian Soda",
+        "size12": "",
+        "size16": "$2.55",
+        "size20": "$2.90",
+        "size24": "$3.15",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "Soft Drinks",
+        "size12": "",
+        "size16": "",
+        "size20": "$1.35",
+        "size24": "$1.45",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "Juice",
+        "size12": "",
+        "size16": "$2.05",
+        "size20": "$2.25",
+        "size24": "$2.50",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "V8",
+        "size12": "$1.80",
+        "size16": "",
+        "size20": "",
+        "size24": "",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "Bottled Water",
+        "size12": "",
+        "size16": "$3.80",
+        "size20": "$4.20",
+        "size24": "$4.65",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "other",
+        "name": "Fruit Smoothies",
+        "size12": "",
+        "size16": "$3.80",
+        "size20": "$4.20",
+        "size24": "$4.65",
+        "image": "",
+        "note": "Strawberry-Banana, Peachberry, Wildberry, Orangeberry, Orange Dream, or create your own."
+    }
+]

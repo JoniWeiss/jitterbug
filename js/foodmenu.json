@@ -23,14 +23,14 @@
     {
         "type": "pastries",
         "name": "Cheesecake",
-        "price": "4.25",
+        "price": "3.50",
         "image": "",
         "note": ""
     },
     {
         "type": "pastries",
         "name": "Carrot Cake",
-        "price": "4.25",
+        "price": "3.50",
         "image": "",
         "note": ""
     },
@@ -87,6 +87,13 @@
         "type": "lunch",
         "name": "Chicken",
         "price": "6.00",
+        "image": "",
+        "note": ""
+    },
+    {
+        "type": "lunch",
+        "name": "Chicken Cordon Bleu",
+        "price": "6.25",
         "image": "",
         "note": ""
     },
@@ -162,8 +169,8 @@
     },
     {
         "type": "other",
-        "name": "Deluxe Nacho Platter",
-        "price": "6.75",
+        "name": "Nachos",
+        "price": "7.00",
         "image": "",
         "note": ""
     }

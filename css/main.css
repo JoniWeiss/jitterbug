@@ -176,6 +176,11 @@ div .button:active {
     border: solid 0.25rem #3B5998;
 }
 
+.specials {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* Have to set height explicity on ui-view
 to prevent collapsing during animation*/
 .jitterbug-content[ui-view]{

@@ -117,7 +117,7 @@
         "size20": "$4.60",
         "size24": "$4.85",
         "image": "",
-        "note": ""
+        "note": "Jitterbug, Bug Juice, S'more, Milky Way, Peanut Butter Cup"
     },
     {
         "type": "tea",
@@ -153,9 +153,9 @@
         "type": "shake",
         "name": "Espresso Shake",
         "size12": "",
-        "size16": "$3.60",
-        "size20": "$4.10",
-        "size24": "$4.35",
+        "size16": "$3.75",
+        "size20": "$4.25",
+        "size24": "$4.50",
         "image": "",
         "note": ""
     },
@@ -163,9 +163,9 @@
         "type": "shake",
         "name": "Mocha Shake",
         "size12": "",
-        "size16": "$3.85",
-        "size20": "$4.35",
-        "size24": "$4.70",
+        "size16": "$4.00",
+        "size20": "$4.50",
+        "size24": "$4.75",
         "image": "",
         "note": ""
     },
@@ -273,9 +273,9 @@
         "type": "other",
         "name": "Bottled Water",
         "size12": "",
-        "size16": "$3.80",
-        "size20": "$4.20",
-        "size24": "$4.65",
+        "size16": "$1.00",
+        "size20": "",
+        "size24": "",
         "image": "",
         "note": ""
     },

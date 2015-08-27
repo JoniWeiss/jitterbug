@@ -92,16 +92,24 @@
                  Header (Begin)
             **************************** -->
             <header class="jitterbug-content">
-                <a ui-sref="home">
-                    <img id="header-image" class="img-responsive"
-                        data-interchange="[assets/jitterbug-header-sm.jpg, (default)],
-                                          [assets/jitterbug-header-lg.jpg, (small-only)]"
-                        alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
-                    <noscript>
-                        <img src="assets/jitterbug-header-large.jpg"
-                            alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
-                    </noscript>
-                </a>
+                <div id="header-image">
+                    <a href="#/">
+                        <img class="img-responsive show-for-small-only"
+                             src="assets/jitterbug-header-lg.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+                        <img class="img-responsive show-for-medium-up"
+                             src="assets/jitterbug-header-sm.jpg" alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">
+                    </a>
+                </div>
+                <!--<a ui-sref="home">-->
+                    <!--<img id="header-image" class="img-responsive"-->
+                        <!--data-interchange="[assets/jitterbug-header-sm.jpg, (default)],-->
+                                          <!--[assets/jitterbug-header-lg.jpg, (small-only)]"-->
+                        <!--alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">-->
+                    <!--<noscript>-->
+                        <!--<img src="assets/jitterbug-header-large.jpg"-->
+                            <!--alt="JitterBug Coffee Hop, LLC | 1855 South 700 East | Salt Lake City, UT 84105 | Phone: (801) 487-8100">-->
+                    <!--</noscript>-->
+                <!--</a>-->
                 <!-- ***********************
                      Navigation (Begin)
                 **************************** -->

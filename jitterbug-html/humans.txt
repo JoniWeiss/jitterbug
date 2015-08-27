@@ -1,8 +1,0 @@
-/* The Jitterbug Web App was made by Joni Weiss, dba Hand Made Pixels, web developer in Salt Lake City, UT */
-/* joniwebgirl.com */
-/* jitterbug.com */
-
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: AngulerJS, Angular-smooth-scroll,  Foundation
-  Software: WebStorm, Git, AddThis

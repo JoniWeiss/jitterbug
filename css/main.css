@@ -12,13 +12,11 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
 
 }
 
 body {
-    font-family: 'Merriweather Sans', sans-serif;
 /********************************************
     Background pattern for all pages.
 *********************************************/
@@ -102,9 +100,9 @@ img {
 HEADING
 ***********************************/
 
-#header-image {
-    border: solid 0.5rem #9e0704;
+#header-image img.img-responsive {
     margin-top: 0.5rem;
+    border: solid 0.5rem #9e0704;
 }
 
 /**********************************
@@ -348,7 +346,7 @@ div .meta-data {
         max-width: 90%;
     }
 
-    #header-image {
+    #header-image img.img-responsive {
         margin-top: 1rem;
     }
 
@@ -476,7 +474,7 @@ div .meta-data {
         /*background-color: #eee;*/
     /*}*/
 
-    #header-image {
+    #header-image img.img-responsive {
         margin-top: 1.5rem;
     }
 

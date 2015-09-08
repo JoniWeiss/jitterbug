@@ -60,21 +60,18 @@ img {
     margin: 2em auto;
 }
 
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    margin: 1.5rem auto 0 auto;
-}
-.videoWrapper iframe {
+#home-video {
     background-color: #000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    margin: 1.5rem auto 0 auto;
     /*border-radius: 3rem;*/
     border: solid 0.2rem #9e0704;
+    box-shadow: 10px 10px 5px #888;
+}
+
+.videogular-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
 #wrapper {

@@ -3,7 +3,12 @@
  */
 var app = angular.module("jitterBug", [
     "ui.router",
-    "smoothScroll"
+    "smoothScroll",
+    "ngSanitize",
+    "com.2fdevs.videogular",
+    "com.2fdevs.videogular.plugins.controls",
+    "com.2fdevs.videogular.plugins.overlayplay",
+    "com.2fdevs.videogular.plugins.poster"
     ]);
 
 app.config(
@@ -15,7 +20,8 @@ app.config(
       $stateProvider
         .state('home', {
             url: "/",
-            templateUrl: "templates/home.html"
+            templateUrl: "templates/home.html",
+            controller: 'HomeCtrl'
         })
         .state('beveragesMenu', {
             url: "/beveragesMenu",
@@ -150,6 +156,37 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
     };
     smoothScroll(element, options);  }
 ]);
+
+app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, smoothScroll, $sce) {
+        this.config = {
+            sources: [
+                {src: $sce.trustAsResourceUrl("assets/jitterbug-commercial-2015-08.mp4"), type: "video/mp4"},
+                {src: $sce.trustAsResourceUrl("assets/jitterbug-commercial-2015-08.webm"), type: "video/webm"},
+                {src: $sce.trustAsResourceUrl("assets/jitterbug-commercial-2015-08.ogg"), type: "video/ogg"}
+            ],
+            tracks: [
+                {
+                    src: "http://www.videogular.com/assets/subs/pale-blue-dot.vtt",
+                    kind: "subtitles",
+                    srclang: "en",
+                    label: "English",
+                    default: ""
+                }
+            ],
+            theme: "css/videogular.min.css",
+            plugins: {
+                poster: "assets/jitterbug-commercial-2015-08.png"
+            }
+        }
+        var element = document.getElementById('scrollTop');
+        var options = {
+            duration: 700,
+            easing: 'easeInQuad'
+        };
+        smoothScroll(element, options);
+    }
+]);
+
 
 app.controller('BeveragesCtrl', ['$scope', '$http', 'smoothScroll',
   function($scope, $http, smoothScroll) {

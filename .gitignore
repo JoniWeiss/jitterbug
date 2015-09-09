@@ -6,6 +6,3 @@
 config.codekit
 .jitterbug-html
 .jitterbug.tar.gz
-/assets/*.mp4
-/assets/*.webm
-/assets/*.ogv

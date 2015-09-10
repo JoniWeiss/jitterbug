@@ -3,12 +3,16 @@
  */
 var app = angular.module("jitterBug", [
     "ui.router",
+<<<<<<< HEAD
     "smoothScroll",
     "ngSanitize",
     "com.2fdevs.videogular",
     "com.2fdevs.videogular.plugins.controls",
     "com.2fdevs.videogular.plugins.overlayplay",
     "com.2fdevs.videogular.plugins.poster"
+=======
+    "smoothScroll"
+>>>>>>> 3db5fdf2d60c372816fee3116117d705fc7907cb
     ]);
 
 app.config(
@@ -20,8 +24,12 @@ app.config(
       $stateProvider
         .state('home', {
             url: "/",
+<<<<<<< HEAD
             templateUrl: "templates/home.html",
             controller: 'HomeCtrl'
+=======
+            templateUrl: "templates/home.html"
+>>>>>>> 3db5fdf2d60c372816fee3116117d705fc7907cb
         })
         .state('beveragesMenu', {
             url: "/beveragesMenu",
@@ -157,6 +165,7 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
     smoothScroll(element, options);  }
 ]);
 
+<<<<<<< HEAD
 app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, smoothScroll, $sce) {
     //var prePath = "//joniwebgirl.com/jitterbug.com/assets"; // production
     var prePath = "assets"; // dev/test - github doesn't allow large file sizes
@@ -185,6 +194,8 @@ app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, 
 ]);
 
 
+=======
+>>>>>>> 3db5fdf2d60c372816fee3116117d705fc7907cb
 app.controller('BeveragesCtrl', ['$scope', '$http', 'smoothScroll',
   function($scope, $http, smoothScroll) {
     $http.get('js/beverages.json').success(function(data) {

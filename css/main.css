@@ -58,6 +58,7 @@ img {
 
 .menu-image {
     margin: 2em auto;
+<<<<<<< HEAD
     width: 80%;
 }
 
@@ -75,6 +76,27 @@ img {
     margin: auto;
 }
 
+=======
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    margin: 1.5rem auto 0 auto;
+}
+.videoWrapper iframe {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*border-radius: 3rem;*/
+    border: solid 0.2rem #9e0704;
+}
+
+>>>>>>> 3db5fdf2d60c372816fee3116117d705fc7907cb
 #wrapper {
   max-width: 95%;
   margin: 0 auto;
@@ -135,6 +157,7 @@ div .button:hover,
 div .button:active {
     background: #2aabd2;
 }
+<<<<<<< HEAD
 
 .open-close {
     background-color: #2aabd2;
@@ -177,6 +200,50 @@ to prevent collapsing during animation*/
   position: relative;
 }
 
+=======
+
+.open-close {
+    background-color: #2aabd2;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.social {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    max-width: 22rem;
+}
+
+.social a.button {
+    border: solid 0.25rem #eee;
+    background: #eee;
+}
+
+.social a.button:hover,
+.social a.button:focus {
+    border: solid 0.25rem #3B5998;
+}
+
+.specials {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+.jitterbug-content[ui-view]{
+ height: 65px;
+}
+
+.ui-view-container {
+  position: relative;
+}
+
+>>>>>>> 3db5fdf2d60c372816fee3116117d705fc7907cb
 .scrl,
 [ui-view].ng-enter,
 [ui-view].ng-leave {
@@ -226,6 +293,19 @@ div .table-row-hr {
     border: solid 0.2rem #9e0704;
     color: #eee;
 }
+<<<<<<< HEAD
+
+.table-row *,
+.table-row-hr * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.table-row .title,
+.table-row-hr .title {
+    min-width: 40%;
+    min-width: calc(100% - 12em);
+=======
 
 .table-row *,
 .table-row-hr * {
@@ -245,6 +325,16 @@ div .table-row-hr {
 .table-row-hr .title-food {
     min-width: 80%;
     min-width: calc(100% - 5em);
+>>>>>>> 3db5fdf2d60c372816fee3116117d705fc7907cb
+    font-size: 1em;
+    font-weight: normal;
+}
+
+<<<<<<< HEAD
+.table-row .title-food,
+.table-row-hr .title-food {
+    min-width: 80%;
+    min-width: calc(100% - 5em);
     font-size: 1em;
     font-weight: normal;
 }
@@ -254,6 +344,13 @@ div .table-row-hr {
     font-weight: 700;
 }
 
+=======
+.table-row-hr .title,
+.table-row-hr .title-food {
+    font-weight: 700;
+}
+
+>>>>>>> 3db5fdf2d60c372816fee3116117d705fc7907cb
 div .title,
 div .title-food {
     padding: 0.5em 0.5em 0 0.5em;

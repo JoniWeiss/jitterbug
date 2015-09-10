@@ -158,14 +158,14 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
 ]);
 
 app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, smoothScroll, $sce) {
-    var prePath = "//joniwebgirl.com/jitterbug.com/assets"; // production
-    //var prePath = "assets"; // dev/test - github doesn't allow large file sizes
+    //var prePath = "//joniwebgirl.com/jitterbug.com/assets"; // production
+    var prePath = "assets"; // dev/test - github doesn't allow large file sizes
 
     this.config = {
             sources: [
-                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-09.mp4"), type: "video/mp4"},
-                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-09.webm"), type: "video/webm"},
-                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-09.ogg"), type: "video/ogg"}
+                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-08.mp4"), type: "video/mp4"},
+                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-08.webm"), type: "video/webm"},
+                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-08.ogg"), type: "video/ogg"}
             ],
             tracks: [
                 {
@@ -181,12 +181,6 @@ app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, 
                 poster: "assets/jitterbug-commercial-2015-08.png"
             }
         }
-        var element = document.getElementById('scrollTop');
-        var options = {
-            duration: 700,
-            easing: 'easeInQuad'
-        };
-        smoothScroll(element, options);
     }
 ]);
 

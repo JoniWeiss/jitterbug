@@ -159,7 +159,7 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
 ]);
 
 app.controller('HomeCtrl', ['$scope', function ($scope) {
-    $scope.vimeoURL = "http://vimeo.com/138932904?title=0&byline=0&portrait=0";
+    $scope.vimeoURL = "https://vimeo.com/138932904?title=0&byline=0&portrait=0";
 }]);
 
 

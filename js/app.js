@@ -158,7 +158,7 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
 ]);
 
 app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, smoothScroll, $sce) {
-    var prePath = "//joniwebgirl.com/jitterbug.com/assets"; // production
+    var prePath = "http//joniwebgirl.com/jitterbug.com/assets"; // production
     //var prePath = "assets"; // dev/test - github doesn't allow large file sizes
 
     this.config = {

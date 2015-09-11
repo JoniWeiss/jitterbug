@@ -5,10 +5,11 @@ var app = angular.module("jitterBug", [
     "ui.router",
     "smoothScroll",
     "ngSanitize",
-    "com.2fdevs.videogular",
+    "anguvideo"
+/*    "com.2fdevs.videogular",
     "com.2fdevs.videogular.plugins.controls",
     "com.2fdevs.videogular.plugins.overlayplay",
-    "com.2fdevs.videogular.plugins.poster"
+    "com.2fdevs.videogular.plugins.poster"*/
     ]);
 
 app.config(
@@ -157,31 +158,9 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
     smoothScroll(element, options);  }
 ]);
 
-app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, smoothScroll, $sce) {
-    var prePath = "assets"; // dev/test - github doesn't allow large file sizes
-
-    this.config = {
-            sources: [
-                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-09.mp4"), type: "video/mp4"},
-                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-09.webm"), type: "video/webm"},
-                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-09.ogg"), type: "video/ogg"}
-            ],
-            tracks: [
-                {
-                    src: "http://www.videogular.com/assets/subs/pale-blue-dot.vtt",
-                    kind: "subtitles",
-                    srclang: "en",
-                    label: "English",
-                    default: ""
-                }
-            ],
-            theme: "css/videogular.min.css",
-            plugins: {
-                poster: "assets/jitterbug-commercial-2015-08.png"
-            }
-        }
-    }
-]);
+app.controller('HomeCtrl', ['$scope', function ($scope) {
+    $scope.vimeoURL = "http://vimeo.com/138932904?title=0&byline=0&portrait=0";
+}]);
 
 
 app.controller('BeveragesCtrl', ['$scope', '$http', 'smoothScroll',

@@ -163,9 +163,9 @@ app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, 
 
     this.config = {
             sources: [
-                {src: $sce.trustAsResourceUrl("//joniwebgirl.com/jitterbug.com/assets/jitterbug-commercial-2015-09.mp4"), type: "video/mp4"},
-                {src: $sce.trustAsResourceUrl("//joniwebgirl.com/jitterbug.com/assets/jitterbug-commercial-2015-09.webm"), type: "video/webm"},
-                {src: $sce.trustAsResourceUrl("//joniwebgirl.com/jitterbug.com/assets/jitterbug-commercial-2015-09.ogg"), type: "video/ogg"}
+                {src: $sce.trustAsResourceUrl("http://joniwebgirl.com/jitterbug.com/assets/jitterbug-commercial-2015-09.mp4"), type: "video/mp4"},
+                {src: $sce.trustAsResourceUrl("http://joniwebgirl.com/jitterbug.com/assets/jitterbug-commercial-2015-09.webm"), type: "video/webm"},
+                {src: $sce.trustAsResourceUrl("http://joniwebgirl.com/jitterbug.com/assets/jitterbug-commercial-2015-09.ogg"), type: "video/ogg"}
             ],
             tracks: [
                 {

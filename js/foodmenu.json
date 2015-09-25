@@ -133,6 +133,13 @@
         "note": ""
     },
     {
+        "type": "lunch",
+        "name": "Bean & Cheese Burrito",
+        "price": "2.50",
+        "image": "",
+        "note": ""
+    },
+    {
         "type": "specialty-sandwiches",
         "name": "Rueben",
         "price": "6.75",

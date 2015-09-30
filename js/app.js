@@ -165,7 +165,7 @@ app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, 
             sources: [
                 {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-08.mp4"), type: "video/mp4"},
                 {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-08.webm"), type: "video/webm"},
-                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-08.ogg"), type: "video/ogg"}
+                {src: $sce.trustAsResourceUrl(prePath + "/jitterbug-commercial-2015-08.ogv"), type: "video/ogg"}
             ],
             tracks: [
                 {

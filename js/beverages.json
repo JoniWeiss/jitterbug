@@ -81,7 +81,7 @@
     },
     {
         "type": "coffee",
-        "name": "White Mocha",
+        "name": "White Chocolate Mocha",
         "size12": "$3.45",
         "size16": "$3.85",
         "size20": "$4.20",
@@ -91,7 +91,7 @@
     },
     {
         "type": "coffee",
-        "name": "Dark Mocha",
+        "name": "Dark Decadent Mocha",
         "size12": "$3.45",
         "size16": "$3.85",
         "size20": "$4.20",
@@ -101,7 +101,7 @@
     },
     {
         "type": "coffee",
-        "name": "English Toffee",
+        "name": "English Toffee Mocha",
         "size12": "$3.45",
         "size16": "$3.85",
         "size20": "$4.20",
@@ -118,6 +118,16 @@
         "size24": "$4.85",
         "image": "",
         "note": "Jitterbug, Bug Juice, S'more, Milky Way, Peanut Butter Cup"
+    },
+    {
+        "type": "coffee",
+        "name": "Double Espresso (2 oz)",
+        "size12": "$1.95",
+        "size16": "",
+        "size20": "",
+        "size24": "",
+        "image": "",
+        "note": ""
     },
     {
         "type": "tea",

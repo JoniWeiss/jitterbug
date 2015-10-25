@@ -70,6 +70,20 @@
         "note": ""
     },
     {
+        "type": "breakfast",
+        "name": "Breakfast Bowl",
+        "price": "3.50",
+        "image": "",
+        "note": "Eggs, Cheese, and Ham, Bacon, or Sausage"
+    },
+    {
+        "type": "breakfast",
+        "name": "Oatmeal",
+        "price": "1.75",
+        "image": "",
+        "note": ""
+    },
+    {
         "type": "lunch",
         "name": "Black Forest Ham",
         "price": "6.25",
@@ -176,7 +190,7 @@
     },
     {
         "type": "other",
-        "name": "Nachos",
+        "name": "Deluxe Nacho Platter",
         "price": "7.00",
         "image": "",
         "note": ""

@@ -11,6 +11,19 @@ var app = angular.module("jitterBug", [
     "com.2fdevs.videogular.plugins.poster"
     ]);
 
+app.run(
+    [          '$rootScope', '$state', '$stateParams',
+        function ($rootScope,   $state,   $stateParams) {
+
+            // It's very handy to add references to $state and $stateParams to the $rootScope
+            // so that you can access them from any scope within your applications.For example,
+            // <li ng-class="{ active: $state.includes('contacts.list') }"> will set the <li>
+            // to active whenever 'contacts.list' or one of its decedents is active.
+            $rootScope.$state = $state;
+            $rootScope.$stateParams = $stateParams;
+        }
+    ]);
+
 app.config(
     [         '$stateProvider', '$urlRouterProvider',
       function($stateProvider, $urlRouterProvider) {
@@ -21,28 +34,33 @@ app.config(
         .state('home', {
             url: "/",
             templateUrl: "templates/home.html",
-            controller: 'HomeCtrl'
+            controller: 'HomeCtrl',
+            data: { pageTitle: 'Home' }
         })
         .state('beveragesMenu', {
             url: "/beveragesMenu",
             templateUrl: 'templates/beverages.html',
-            controller: 'BeveragesCtrl'
-        })
+            controller: 'BeveragesCtrl',
+            data: { pageTitle: 'Beverage Menu' }
+          })
         .state('foodMenu', {
             url: "/foodMenu",
             templateUrl: 'templates/food.html',
-            controller: 'FoodCtrl'
-        })
+            controller: 'FoodCtrl',
+            data: { pageTitle: 'Food Menu' }
+          })
         .state('mapToUs', {
             url: "/maptoUs",
             templateUrl: "templates/map.html",
-            controller: 'DefaultCtrl'
-        })
+            controller: 'DefaultCtrl',
+            data: { pageTitle: 'Map' }
+          })
         .state('aboutUs', {
             url: "/aboutUs",
             templateUrl: "templates/about.html",
-            controller: 'DefaultCtrl'
-        });
+            controller: 'DefaultCtrl',
+            data: { pageTitle: 'About Us' }
+          });
       }
     ]
 );
@@ -110,30 +128,30 @@ app.directive('openClosed', function($parse, $filter) {
                 case 'Wed':
                 case 'Thu':
                     if (( timeNow >= 0630) && (timeNow <= 2000)) {
-                        status = openMsg + "8 pm.";
+                        status = openMsg + "8:00pm.";
                     } else {
                         status = closedMsg + "6:30am.";
                     }
                     break;
                 case 'Fri':
                      if (( timeNow >= 0630) && (timeNow <= 2000)) {
-                         status = openMsg + "8 pm.";
+                         status = openMsg + "8:00pm.";
                     } else {
-                         status = closedMsg + "8 am.";
+                         status = closedMsg + "8:00am.";
                     }
                     break;
                 case 'Sat':
                     if ((timeNow >= 0800) && (timeNow <= 2000)) {
-                        status = openMsg +  "9 pm.";
+                        status = openMsg + "9:00pm.";
                     } else {
-                        status = closedMsg +  "9 am.";
+                        status = closedMsg + "9:00am.";
                     }
                     break;
                 case 'Sun':
                     if ((timeNow >= 0900) && (timeNow <= 1800)) {
-                        status = openMsg + "6 pm.";
+                        status = openMsg + "6:00pm.";
                     } else {
-                        status = closedMsg +  "6:30am.";
+                        status = closedMsg + "6:30am.";
                     }
                     break;
                     default:
@@ -159,7 +177,9 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
 
 app.controller('HomeCtrl', ['$scope', 'smoothScroll', '$sce', function ($scope, smoothScroll, $sce) {
     //var prePath = "//joniwebgirl.com/jitterbug.com/assets"; // production
-    var prePath = "assets"; // dev/test - github doesn't allow large file sizes
+    //var prePath = "assets"; // dev/test - github doesn't allow large file sizes
+    var prePath = "//jitterbugcoffeehop.com/assets";
+
 
     this.config = {
             sources: [

@@ -10,25 +10,27 @@
  GENERAL
  ************************************************/
 
-body {
-/*    font-family: 'Allerta', sans-serif;*/
+* {
+    box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
-/*    font-family: 'Ubuntu', sans-serif;*/
+
+}
+
+body {
 /********************************************
     Background pattern for all pages.
 *********************************************/
-    background-color: yellow;
-    /*background-image:   linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black),
-                        linear-gradient(45deg, black 27%, transparent 25%, transparent 75%, black 77%, black);*/
-    background-image:   linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black),
-                        linear-gradient(45deg, black 26.2%, transparent 25%, transparent 75%, black 76.2%, black);
+    background-color:#9e0704;
+    background-image:
+        radial-gradient(black 24%, transparent 25%),
+        radial-gradient(black 24%, transparent 25%);
+    background-size:60px 60px;
+    background-position: 0 0, 30px 30px;
 
-    background-size: 3.2rem 3.2rem;
-    background-position: 0 0, 1.6rem 1.6rem;
-    padding: 0;
+    padding: 1em;
 }
 
-section > div.row {
+section > div.table-row {
     padding-bottom: 2.5rem;
 }
 
@@ -37,7 +39,7 @@ footer {
     padding-bottom: 5rem
 }
 
-footer > div.row {
+footer > div.table-row {
     float: none;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -54,9 +56,27 @@ img {
     border: solid 0.2rem #9e0704;
 }
 
+.menu-image {
+    margin: 2em auto;
+    width: 80%;
+}
+
+#home-video {
+    background-color: #000;
+    margin: 1.5rem auto 0 auto;
+    /*border-radius: 3rem;*/
+    border: solid 0.2rem #9e0704;
+    box-shadow: 10px 10px 5px #888;
+}
+
+.videogular-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
 #wrapper {
-  background-color: #000;
-  max-width: 85%;
+  max-width: 95%;
   margin: 0 auto;
   padding: 0.5% 0.5%;
 }
@@ -67,26 +87,15 @@ img {
   border: solid 0.1rem #aaa;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 1%;
 }
 
 /**********************************
 HEADING
 ***********************************/
-.jumbotron {
-    padding-top: 2rem;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.container .jumbotron,
-.container .jumbotron .container,
-.container-fluid .jumbotron {
-    padding-right: 0;
-    padding-left: 0;
 
-}
-
-.header-img {
+#header-image img.img-responsive {
+    margin-top: 0.5rem;
     border: solid 0.5rem #9e0704;
 }
 
@@ -94,48 +103,220 @@ HEADING
 NAVIGATION
 ***********************************/
 
-#menu {
+.menu {
     display: block;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     text-align: center;
 }
 
-nav a.button {
-    border: solid 0.2rem #9e0704;
-    background: #2aabd2;
-    font-size: 0.75em;
-    color: #000;
-    text-transform: capitalize;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 15%;
+a.small.round.button,
+a.small.round.button.secondary {
+    margin: 1rem auto;
 }
 
-nav a.button.secondary {
+div a.button {
+    border: solid 0.2rem #9e0704;
+    background: #2aabd2;
+    /*font-size: 0.75em;*/
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+    padding: 1.563em 1.563em;
+    width: 100%;
+    max-width: 20rem;
+}
+
+div a.button.secondary {
     border: solid 0.2rem #9e0704;
     background: #eee;
 }
 
-nav .button:hover,
-nav .button:active {
+div .button:hover,
+div .button:active {
     background: #2aabd2;
 }
 
-.btn,
-.btn-info {
-    border: solid 0.25rem #3B5998;
-    color: #3B5998;
+.open-close {
+    background-color: #2aabd2;
+    font-weight: bold;
+    border-radius: 12px;
 }
 
-.btn-info:hover,
-.btn-info:focus {
-    border: solid 0.25rem #3B5998;
-    color: #3B5998;
-}
-
-.buttonbar {
+.social {
+    display: block;
     margin: 0.5rem auto;
+    padding: 0 1rem;
     text-align: center;
+    font-weight: bold;
+    width: 100%;
+    max-width: 22rem;
+}
+
+.social a.button {
+    border: solid 0.25rem #fff;
+    background: #eee;
+}
+
+.social a.button:hover,
+.social a.button:focus {
+    border: solid 0.25rem #3B5998;
+}
+
+.specials {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+.jitterbug-content[ui-view]{
+ height: 65px;
+}
+
+.ui-view-container {
+  position: relative;
+}
+
+.scrl,
+[ui-view].ng-enter,
+[ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition:all 2s ease-in-out;
+}
+
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 1%;
+    bottom: 5%;
+    background: #2aabd2 url("../assets/up-arrow.png") no-repeat center 43%;
+    border-radius: 30px;
+}
+
+a:hover.back-to-top {
+    background-color: #247cbd;
+}
+
+
+/**********************************
+ Table Styles - Divs
+***********************************/
+.table-row,
+.table-row-hr {
+    position: relative;
+}
+
+div .table-row-hr {
+    background-color: #247cbd;
+    margin-top: 2em;
+    padding-top: 1em;
+    min-width: 95%;
+    border-radius: 25px;
+    border: solid 0.2rem #9e0704;
+    color: #eee;
+}
+
+.table-row *,
+.table-row-hr * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.table-row .title,
+.table-row-hr .title {
+    min-width: 40%;
+    min-width: calc(100% - 12em);
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.table-row .title-food,
+.table-row-hr .title-food {
+    min-width: 80%;
+    min-width: calc(100% - 5em);
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.table-row-hr .title,
+.table-row-hr .title-food {
+    font-weight: 700;
+}
+
+div .title,
+div .title-food {
+    padding: 0.5em 0.5em 0 0.5em;
+}
+
+div .note,
+div .meta-data {
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+.table-row .title {
+    display: block;
+    clear: left;
+}
+
+.table-row .price,
+.table-row .price12,
+.table-row .price16,
+.table-row .price20,
+.table-row .price24,
+.table-row-hr .price,
+.table-row-hr .price12,
+.table-row-hr .price16,
+.table-row-hr .price20,
+.table-row-hr .price24 {
+    text-align: right;
+    font-size: 1em;
+}
+
+.table-row {
+  border-bottom: 1px solid #dbecf8;
+}
+
+.table-row-hr .meta-data {
+  display: inline-block;
+  position: relative;
+}
+
+.table-row .note,
+.table-row-hr .note,
+.table-row .meta-data > * {
+    display: inline-block;
+}
+
+.price,
+.table-row .meta-data > *,
+.table-row-hr .meta-data > * {
+  min-width: 4em;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.table-row-hr .note,
+.table-row-hr .price,
+.table-row-hr .price12,
+.table-row-hr .price16,
+.table-row-hr .price20,
+.table-row-hr .price24 {
+    color: #eee;
+}
+
+.table-row .note,
+.table-row .price,
+.table-row .price12,
+.table-row .price16,
+.table-row .price20,
+.table-row .price24 {
+  color: #000078;
 }
 
 /**********************************
@@ -143,45 +324,154 @@ nav .button:active {
 ***********************************/
 /*Medium screens*/
 @media only screen and (min-width: 40.063em) {
-    body {
-        background-size: 3.2rem 3.2rem;
-        background-position: 0 0, 1.6rem 1.6rem;
-        background-color: darkmagenta;
-    }
+    /*body {*/
+        /*background-size: 3.2rem 3.2rem;*/
+        /*background-position: 0 0, 1.6rem 1.6rem;*/
+        /*background-color: darkmagenta;*/
+    /*}*/
 
     #wrapper {
-        max-width: 80%;
+        max-width: 90%;
     }
 
-    .jumbotron {
-        padding-top: 2.5rem;
+    #header-image img.img-responsive {
+        margin-top: 1rem;
+    }
+
+    div.small-12.medium-6.large-2.columns {
+        padding-left: 0.02rem;
+        padding-right: 0.02rem;
+    }
+
+    nav a.button {
+        width: 100%;
+        max-width: 14rem;
+    }
+
+    a.back-to-top {
+        right: 7.1%;
+    }
+
+    div .title {
+        padding: 1em;
+    }
+
+    div .note,
+    div .meta-data {
+        padding: 0 1em 1em 1em;
+    }
+
+    .table-row .title,
+    .table-row .title-food {
+        border-bottom: thin dotted #2aabd2;
+    }
+
+    .table-row .title,
+    .table-row-hr .title {
+        min-width: 65%;
+        min-width: calc(100% - 20em);
+        font-size: 1em;
+        font-weight: normal;
+        padding: 0 1rem;
+    }
+
+    .table-row .title-food,
+    .table-row-hr .title-food {
+        min-width: 93%;
+        min-width: calc(100% - 4.5em);
+        font-size: 1em;
+        font-weight: normal;
+        padding: 0 1rem;
+    }
+
+    div .table-row-hr {
+        margin-top: 2em;
+        padding-top: 1em;
+        background-color: #247cbd;
+        min-width: 95%;
+        border-radius: 25px;
+        border: solid 0.2rem #9e0704;
+        color: #eee;
+    }
+
+    .table-row-hr .title,
+    .table-row-hr .title-food {
+        font-weight: 700;
+    }
+
+    .table-row .title {
+      /*padding: 1rem;*/
+      display: inline-block;
+      clear: left;
+    }
+
+    div .note,
+    .table-row .note,
+    .table-row-hr .note {
+        width: 100%;
+    }
+
+/*    .table-row .meta-data,
+    .table-row-hr .meta-data {
+      width: 16em;
+    }*/
+
+    .table-row .meta-data > *,
+    .table-row-hr .meta-data > * {
+        width: 4em;
+        /*padding: 0 0.5rem;*/
+        /*cursor: pointer;*/
+        display: inline-block;
     }
 }
 
 /*Large screens*/
 @media only screen and (min-width: 64.063em) {
+    /*body {*/
+        /*background-color: green;*/
+    /*}*/
+
     body {
-        background-color: green;
+        padding: 1.75em;
     }
 
     #wrapper {
-        max-width: 75%;
+        max-width: 85%;
     }
 
-    .jumbotron {
-        padding-top: 2.5rem;
+    div.small-12.medium-6.large-2.columns {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+
+    nav a.button {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    a.back-to-top {
+        right: 10%;
     }
 }
 
 /*XLarge screens*/
 @media only screen and (min-width: 90.063em) {
-    body {
-        background-size: 4.8rem 4.8rem;
-        background-position: 0 0, 2.4rem 2.4rem;
-        background-color: #eee;
+    /*body {*/
+        /*background-size: 4.8rem 4.8rem;*/
+        /*background-position: 0 0, 2.4rem 2.4rem;*/
+        /*background-color: #eee;*/
+    /*}*/
+
+    #header-image img.img-responsive {
+        margin-top: 1.5rem;
     }
 
-    .jumbotron {
-        padding-top: 4rem;
+    nav a.button {
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    a.back-to-top {
+        right: 12%;
     }
 }

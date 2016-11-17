@@ -1,0 +1,79 @@
+<div  ng-controller="HomeCtrl as controller">
+     <div>
+         <h1 class="text-center">A Lot More Than Just Coffee</h1>
+         <p class="text-center">
+                A uniquely modern retro atmosphere featuring tasty espresso based
+                beverages, smoothies, root beer floats, hot chocolate, Italian sodas,
+                an assortment of teas, sandwiches, soups, the most fattening pastries
+                on the planet, and of course... coffee so fresh it should be slapped.<br><br>
+                Get the bug and check out the hippest hop in the neighborhood... <em>JitterBug Coffee Hop!</em></p>
+
+            <p class="text-center specials">Special:  $2 Lattes from 4pm until 6pm on weekdays!</p>
+
+            <p class="text-center">Don't have time to come in? Try our drive through window for speedy service.</p>
+     </div>
+     <div class="row">
+        <div class="column">
+            <div id="home-video" class="video-container show-for-large-up">
+                <div class="videogular-container">
+                    <!-- Video -->
+                    <videogular vg-theme="controller.config.theme">
+                        <vg-media vg-src="controller.config.sources"
+                                  vg-tracks="controller.config.tracks">
+                        </vg-media>
+
+                        <vg-controls>
+                            <vg-play-pause-button></vg-play-pause-button>
+                            <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+                            <vg-scrub-bar>
+                                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                            </vg-scrub-bar>
+                            <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+                            <vg-volume>
+                                <vg-mute-button></vg-mute-button>
+                                <vg-volume-bar></vg-volume-bar>
+                            </vg-volume>
+                            <vg-fullscreen-button></vg-fullscreen-button>
+                        </vg-controls>
+
+                        <vg-overlay-play></vg-overlay-play>
+                        <vg-poster vg-url='controller.config.plugins.poster'></vg-poster>
+                    </videogular>
+
+                </div>
+            </div>
+            <h2 class="text-center show-for-large-up">Watch our Commercial!
+            </h2>
+            <h2 class="text-center hide-for-large-up">
+                <a href="//www.youtube.com/watch?v=F9zbF5fwq3Q&showingo=0&rel=0">
+                    Watch our Commercial!
+                </a>
+            </h2>
+
+
+            <p class="text-center">Come in and tell us what part(s) you like the most :)</p>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <a ui-sref="beveragesMenu"><img class="img-responsive" src="assets/cup-of-jitterbug.jpg" alt="JitterBug Beverages -- go to menu.">
+                <h2 class="text-center">Beverages</h2></a>
+                <p class="text-center">
+                    Coffee, Tea, and Shakes -- Oh My!
+                    Hand-crafted Latte's and many other delights.
+                </p>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <a ui-sref="foodMenu"><img class="img-responsive" src="assets/coffee-n-sandwich.jpg" alt="JitterBug Food Selections -- go to menu.">
+                <h2 class="text-center">Delicious Food</h2></a>
+                <p class="text-center">
+                    Best nachos in town. Yummy sammiches and other treats.
+                </p>
+        </div>
+        <div class="small-12 columns">
+            <a ui-sref="mapToUs"><img class="img-responsive" src="assets/store-front-small.jpg" alt="Visit us at 1855 South 700 East, Salt Lake City, Utah 84105">
+                <h2 class="text-center">Visit Us</h2></a>
+                <p class="text-center">
+                    We're located at 1855 South 700 East, Salt Lake City, Utah 84105.
+                </p>
+        </div>
+    </div>
+</div>

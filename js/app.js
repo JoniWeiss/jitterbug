@@ -27,7 +27,7 @@ app.run(
 app.config(
     [         '$stateProvider', '$urlRouterProvider',
       function($stateProvider, $urlRouterProvider) {
-      // // For any unmatched url, send to /route1
+      // For any unmatched url, send to /route1
       $urlRouterProvider.otherwise("/");
 
       $stateProvider

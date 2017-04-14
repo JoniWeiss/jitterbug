@@ -2,9 +2,9 @@
  * Business Name: Jitterbug Coffee Hop, 1855 S 700 E, Salt Lake City, UT 84105
  * Site Name: jitterbug.com
  * Created:   July 2015
- * Author:    Joni Weiss, joniwebgirl.com
+ * Author:    Joni Weiss, joniweiss.com
  *
- * Notes:     Built on top of Bootstrap 3.x
+ * Notes:     Built on top of Zurb Foundation
  ***************************************************************************/
 /************************************************
  GENERAL
@@ -16,7 +16,7 @@
 
 }
 
-body {
+/*body {
 /********************************************
     Background pattern for all pages.
 *********************************************/
@@ -26,9 +26,8 @@ body {
         radial-gradient(black 24%, transparent 25%);
     background-size:60px 60px;
     background-position: 0 0, 30px 30px;
-
     padding: 1em;
-}
+}*/
 
 section > div.table-row {
     padding-bottom: 2.5rem;
@@ -64,7 +63,6 @@ img {
 #home-video {
     background-color: #000;
     margin: 1.5rem auto 0 auto;
-    /*border-radius: 3rem;*/
     border: solid 0.2rem #9e0704;
     box-shadow: 10px 10px 5px #888;
 }
